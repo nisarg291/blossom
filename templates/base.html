@@ -1,0 +1,810 @@
+{% load static %}
+<html lang="en" class=""><head><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+<title>Blossom | {% block title%}{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" name="keywords" content="Blossom">
+    <meta charset="utf-8" name="title" content="Blossom,Spoken, English, Learn English, Spoken English Ahmedabad">
+    <meta charset="utf-8" name="description" content="Blossom is an internationally recognized fast growing organization in educational industry that shapes the future of many.">
+    <!-- LIBRARY FONT-->
+<!--     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400italic,700,900,300"> -->
+
+    
+   
+  
+    <script src="/jquery/jquery-2.1.4.min.js"></script>
+    <script src="/js-cookie/js.cookie.js"></script>
+    <script>if ((Cookies.get('color-skin') != undefined) && (Cookies.get('color-skin') != 'color-1')) {
+        $('#color-skins').attr('href', '/css/' + Cookies.get('color-skin') + '.css');
+    } else if ((Cookies.get('color-skin') == undefined) || (Cookies.get('color-skin') == 'color-1')) {
+        $('#color-skins').attr('href', 'css/color-1.css');
+    }
+
+
+    </script>
+<style type="text/css">.fancybox-margin{margin-right:17px;}
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+
+        /* #Primary
+================================================== */
+body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #212112;
+            background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+            background-position: center;
+            background-repeat: repeat;
+            background-size: 7%;
+            background-color: #fff;
+            overflow-x: hidden;
+            transition: all 200ms linear;
+        }
+
+
+
+        /* #Navigation
+================================================== */
+
+        .start-header {
+            opacity: 1;
+            transform: translateY(0);
+            padding: 5px 0;
+            box-shadow: 0 10px 30px 0 rgba(255,255, 255);
+            -webkit-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+        }
+
+        .start-header.scroll-on {
+            box-shadow: 0 5px 10px 0 rgb(255, 255, 255);
+            padding: 10px 0;
+            -webkit-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+        }
+
+        .start-header.scroll-on .navbar-brand img {
+            height: 24px;
+            -webkit-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+        }
+
+        .navigation-wrap {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            -webkit-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+        }
+
+        .navbar {
+            padding: 0;
+        }
+
+        .navbar-brand img {
+            height: 28px;
+            width: auto;
+            display: block;
+            filter: brightness(10%);
+            -webkit-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+        }
+
+        .navbar-toggler {
+            float: right;
+            border: none;
+            padding-right: 0;
+        }
+
+        .navbar-toggler:active,
+        .navbar-toggler:focus {
+            outline: none;
+        }
+
+        .navbar-light .navbar-toggler-icon {
+            width: 24px;
+            height: 17px;
+            background-image: none;
+            position: relative;
+            border-bottom: 1px solid #000;
+            transition: all 300ms linear;
+        }
+
+        .navbar-light .navbar-toggler-icon:after,
+        .navbar-light .navbar-toggler-icon:before {
+            width: 24px;
+            position: absolute;
+            height: 1px;
+            background-color: #000;
+            top: 0;
+            left: 0;
+            content: '';
+            z-index: 2;
+            transition: all 300ms linear;
+        }
+
+        .navbar-light .navbar-toggler-icon:after {
+            top: 8px;
+        }
+
+        .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+            transform: rotate(45deg);
+        }
+
+        .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+            transform: translateY(8px) rotate(-45deg);
+        }
+
+        .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+            border-color: transparent;
+        }
+
+        .nav-link {
+            color: #212121 !important;
+            font-weight: 500;
+            transition: all 200ms linear;
+        }
+
+        .nav-item:hover .nav-link {
+            color: #8167a9 !important;
+        }
+
+        .nav-item.active .nav-link {
+            color: #777 !important;
+        }
+
+        .nav-link {
+            position: relative;
+            padding: 5px 0 !important;
+            display: inline-block;
+        }
+
+        .nav-item:after {
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            content: '';
+            background-color: #8167a9;
+            opacity: 0;
+            transition: all 200ms linear;
+        }
+
+        .nav-item:hover:after {
+            bottom: 0;
+            opacity: 1;
+        }
+
+        .nav-item.active:hover:after {
+            opacity: 0;
+        }
+
+        .nav-item {
+            position: relative;
+            transition: all 200ms linear;
+        }
+
+        /* #Primary style
+================================================== */
+
+       
+        .nav-item .dropdown-menu {
+            transform: translate3d(0, 10px, 0);
+            visibility: hidden;
+            opacity: 0;
+            max-height: 0;
+            display: block;
+            padding: 0;
+            margin: 0;
+            transition: all 200ms linear;
+        }
+
+        .nav-item.show .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            max-height: 999px;
+            transform: translate3d(0, 0px, 0);
+        }
+
+        .dropdown-menu {
+            padding: 10px !important;
+            margin: 0;
+            font-size: 13px;
+            letter-spacing: 1px;
+            color: #212121;
+            background-color: #fcfaff;
+            border: none;
+            border-radius: 3px;
+            box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
+            transition: all 200ms linear;
+        }
+
+        .dropdown-toggle::after {
+            display: none;
+        }
+
+        .dropdown-item {
+            padding: 3px 15px;
+            color: #212121;
+            border-radius: 2px;
+            transition: all 200ms linear;
+        }
+
+        .dropdown-item:hover,
+        .dropdown-item:focus {
+            color: #fff;
+            background-color: rgba(129, 103, 169, .6);
+        }
+
+        body.dark {
+            color: #fff;
+            background-color: #1f2029;
+        }
+
+        body.dark .navbar-brand img {
+            filter: brightness(100%);
+        }
+
+        body.dark h1 {
+            color: #fff;
+        }
+
+        body.dark h1 span {
+            transition-delay: 0ms !important;
+        }
+
+        body.dark p {
+            color: #fff;
+            transition-delay: 0ms !important;
+        }
+
+        body.dark .bg-light {
+            background-color: #14151a !important;
+        }
+
+        body.dark .start-header {
+            box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
+        }
+
+        body.dark .start-header.scroll-on {
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+        }
+
+        body.dark .nav-link {
+            color: #fff !important;
+        }
+
+        body.dark .nav-item.active .nav-link {
+            color: #999 !important;
+        }
+
+        body.dark .dropdown-menu {
+            color: #fff;
+            background-color: #1f2029;
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+        }
+
+        body.dark .dropdown-item {
+            color: #fff;
+        }
+
+        body.dark .navbar-light .navbar-toggler-icon {
+            border-bottom: 1px solid #fff;
+        }
+
+        body.dark .navbar-light .navbar-toggler-icon:after,
+        body.dark .navbar-light .navbar-toggler-icon:before {
+            background-color: #fff;
+        }
+
+        body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+            border-color: transparent;
+        }
+
+
+
+        /* #Media
+================================================== */
+
+        @media (max-width: 767px) {
+            h1 {
+                font-size: 38px;
+            }
+
+            .nav-item:after {
+                display: none;
+            }
+
+            .nav-item::before {
+                position: absolute;
+                display: block;
+                top: 15px;
+                left: 0;
+                width: 11px;
+                height: 1px;
+                content: "";
+                border: none;
+                background-color: #000;
+                vertical-align: 0;
+            }
+
+            .dropdown-toggle::after {
+                position: absolute;
+                display: block;
+                top: 10px;
+                left: -23px;
+                width: 1px;
+                height: 11px;
+                content: "";
+                border: none;
+                background-color: #000;
+                vertical-align: 0;
+                transition: all 200ms linear;
+            }
+
+            .dropdown-toggle[aria-expanded="true"]::after {
+                transform: rotate(90deg);
+                opacity: 0;
+            }
+
+            .dropdown-menu {
+                padding: 0 !important;
+                background-color: transparent;
+                box-shadow: none;
+                transition: all 200ms linear;
+            }
+
+            .dropdown-toggle[aria-expanded="true"]+.dropdown-menu {
+                margin-top: 10px !important;
+                margin-bottom: 20px !important;
+            }
+
+            body.dark .nav-item::before {
+                background-color: #fff;
+            }
+
+            body.dark .dropdown-toggle::after {
+                background-color: #fff;
+            }
+
+            body.dark .dropdown-menu {
+                background-color: transparent;
+                box-shadow: none;
+            }
+        }
+
+        /* #Link to page
+================================================== */
+
+        .logo {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            display: block;
+            z-index: 100;
+            transition: all 250ms linear;
+        }
+        .logo img {
+            height: 26px;
+            width: auto;
+            display: block;
+            filter: brightness(10%);
+            transition: all 250ms linear;
+        }
+
+        body.dark .logo img {
+            filter: brightness(100%);
+        }
+    </style>
+    <style>{% block style %}{% endblock %}</style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="shortcut icon" type="images/png" href="{% static 'images/fav.png' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/Glyphter.css' %}">
+    <!-- LIBRARY CSS-->
+    <link type="text/css" rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+    <link type="text/css" rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/jquery.selectbox.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/jquery.fancybox.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/jquery.fancybox-buttons.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/mediaelementplayer.min.css' %}">
+    <!-- STYLE CSS    --><!--link(type="text/css", rel='stylesheet', href='css/color-1.css', id="color-skins")-->
+<link type="text/css" rel="stylesheet" href="{% static 'css/color-1.css' %}" id="color-skins">
+<link type="text/css" rel="stylesheet" href="{% static 'css/blossom.css' %}">
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="{% static 'css/style.css' %}"> -->
+
+    <!-- Responsive CSS -->
+    <!-- <link rel="stylesheet" href="{% static 'css/responsive.css' %}"> -->
+    </head>
+<body data-new-gr-c-s-check-loaded="14.1024.0" data-gr-ext-installed="" style="background-color:hsla(181, 100%, 80%,0.7)"><!-- HEADER-->
+	                   
+<div class="navigation-wrap bg-white start-header start-style" style="background-color:hsla(181, 50%, 80%,0.9) !important">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-md navbar-light">
+
+                        <a href=""><img src="{% static 'images/logo.jpg' %}" height="70" width="200px"></a>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto py-4 py-md-0">
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link {% block homeactive %}{% endblock homeactive %}" href="{% url 'home' %}">Home</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link {% block aboutusactive %}{% endblock aboutusactive %}" href="{% url 'AboutUs' %}">About Us</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link" href="{% url 'Courses' %}">Courses</a>
+                                </li>
+                                
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link dropdown-toggle {% block listeningflashactive %}{% endblock listeningflashactive %}" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Coaching</a>
+									<div class="dropdown-menu">
+                                        
+										<a class="dropdown-item" href="{% url 'Spoken' %}">Spoken English</a>
+										<a class="dropdown-item" href="{% url 'Ielts' %}">IELTS</a>
+										<a class="dropdown-item" href="{% url 'Personality' %}">Personality Development</a>
+									</div>
+								</li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Country</a>
+									<div class="dropdown-menu">
+                                        <a class="dropdown-item" href="{% url 'USA' %}">Study In USA</a>
+										<a class="dropdown-item" href="{% url 'Australia' %}">Study In Australia</a>
+                                        <a class="dropdown-item" href="{% url 'Canada' %}">Study In Canada</a>
+										<a class="dropdown-item" href="{% url 'Poland' %}">Study In Poland</a>
+                    					<a class="dropdown-item" href="{% url 'NewZealand' %}">Study In New Zealand</a>
+										<a class="dropdown-item" href="{% url 'Germany' %}">Study In Germany</a>
+                                        <a class="dropdown-item" href="{% url 'UK' %}">Study In UK</a>
+									</div>
+								</li>
+                                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="{% url 'BlossomCoaching' %}">Blossom Coaching</a>
+										<a class="dropdown-item" href="{% url 'BlossomImmigration' %}">Blossom Immigration</a>
+									</div>
+								</li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">News &amp; Events</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="{% url 'UpCommingEvents' %}">UpComming Events</a>
+										<a class="dropdown-item" href="{% url 'Gallary' %}">Gallary</a>
+									</div>
+								</li>
+                               
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link" href="{% url 'Contact' %}">Contact</a>
+                                </li>
+                                
+                                
+                            </ul>
+                        </div>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+{% block content %}{% endblock %}
+<!-- FOOTER-->
+<footer>
+    <div class="footer-top" style="border: 1px solid #FFF;">
+        <!-- <div class="container">
+            <div class="footer-top-wrapper">
+                <div class="footer-top-left"><p class="footer-top-focus">BECOME AN INSTRUCTOR</p>
+
+                    <p class="footer-top-text">Join thousand of instructors and earn money hassle free!</p></div>
+                <div class="footer-top-right">
+                    <button onclick="window.location.href='Contact.jsp'" class="btn btn-blue btn-bold"><span>GET STARTED NOW</span></button>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <div class="footer-main">
+        <div class="container">
+            <div class="footer-main-wrapper">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
+                            <div class="edugate-widget widget">
+                                <div class="title-widget">Maninagar Branch</div>
+                                <div class="content-widget"><p>
+        						  </p>
+
+                                    <div class="info-list">
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-envelope"></i><a>maninagar@blossominstitutes.com</a></li>
+                                            <li><i class="fa fa-phone"></i><a>93758 26472 </a></li>
+                                            <li><i class="fa fa-map-marker"></i><a><p>1<sup>st</sup> Floor, Nr. Farki, Kesarkunj Complex,In Front Of AMC Zonal Office, Krishnabaug Char Rasta,</p>
+                                               			 <p>Maninagar, Ahmedabad.</p></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
+                            <div class="edugate-widget widget">
+                                <div class="title-widget">Bapunagar Branch</div>
+                                <div class="content-widget"><p></p>
+
+                                    <div class="info-list">
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-envelope"></i><a>bapunagar@blossominstitutes.com</a></li>
+                                            <li><i class="fa fa-phone"></i><a>99240 20222 </a></li>
+                                            <li><i class="fa fa-map-marker"></i><a><p>1<sup>st</sup> Floor, Maruti Plaza, Near, Shakti Chavana,</p>
+                                                <p>Bhidbhanjan Road, Bapunagar.</p></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
+                            <div class="edugate-widget widget">
+                                <div class="title-widget">Nehrunagar Branch</div>
+                                <div class="content-widget"><p></p>
+
+                                    <div class="info-list">
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-envelope"></i><a>nehrunagar@blossominstitutes.com</a></li>
+                                            <li><i class="fa fa-phone"></i><a>93758 60397 </a></li>
+                                            <li><i class="fa fa-map-marker"></i><a><p>3<sup>rd</sup> Floor, Shailibhandra Complex, Above Das khaman, infront of Jain Temple,</p>
+
+                                                <p>nehrunagar Cross Roads, Ahmedabad.</p></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
+                            <div class="edugate-widget widget">
+                                <div class="title-widget">Mota Varachha</div>
+                                <div class="content-widget"><p></p>
+
+                                    <div class="info-list">
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-envelope"></i><a>contact@blossominstitutes.com </a></li>
+                                            <li><i class="fa fa-phone"></i><a>9727172929 </a></li>
+                                            <li><i class="fa fa-map-marker"></i><a><p>B/303 Aditya complex Nr. Utran-kapodra Bridge, Above ICICI bank,VIP Circle</p>
+                                                <p>Mota Varachha, Gujarat.</p></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        	     
+
+                        
+                    </div>
+                    </div>
+                                    
+                    <div class="row">
+                    <div class="col-12">
+                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
+                            <div class="edugate-widget widget">
+                                <div class="title-widget">Ghatlodiya Branch</div>
+                                <div class="content-widget"><p>
+        						  </p>
+
+                                    <div class="info-list">
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-envelope"></i><a>ghatlodiya@blossominstitutes.com </a></li>
+                                            <li><i class="fa fa-phone"></i><a>95740 42225 </a></li>
+                                            <li><i class="fa fa-map-marker"></i><a><p>1<sup>st</sup> Floor, Shrikunj Shopping Center, Nr. Veer Dairy, Prabhat Chowk,</p>
+                                               			 <p>Ghatlodiya, Ahmedabad.</p></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
+                            <div class="edugate-widget widget">
+                                <div class="title-widget">Shahibaug Branch</div>
+                                <div class="content-widget"><p></p>
+
+                                    <div class="info-list">
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-envelope"></i><a>shahibaug@blossominstitutes.com</a></li>
+                                            <li><i class="fa fa-phone"></i><a>97235 56029 </a></li>
+                                            <li><i class="fa fa-map-marker"></i><a><p>3<sup>rd</sup> Floor, Above HDFC Bank, Ashtmangal Complex, Nr. Rajasthan Hospital,</p>
+                                                <p>Shahibaug, Ahmedabad.</p></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
+                            <div class="edugate-widget widget">
+                                <div class="title-widget">Chandkheda Branch</div>
+                                <div class="content-widget"><p></p>
+
+                                    <div class="info-list">
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-envelope"></i><a>chandkheda@blossominstitutes.com</a></li>
+                                            <li><i class="fa fa-phone"></i><a>96248 86029 </a></li>
+                                            <li><i class="fa fa-map-marker"></i><a><p>1<sup>st</sup> Floor, Sahjanand Complex, Nr. Sona Cross Road, New C.G. Road,</p>
+
+                                                <p>Chandkheda, Ahmedabad.</p></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        	                 
+                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
+                            <div class="edugate-widget widget">
+                                <div class="title-widget">Naroda Branch</div>
+                                <div class="content-widget"><p></p>
+
+                                    <div class="info-list">
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-envelope"></i><a>naroda@blossominstitutes.com </a></li>
+                                            <li><i class="fa fa-phone"></i><a>90331 60781</a></li>
+                                            <li><i class="fa fa-map-marker"></i><a><p> E 402, 4<sup>th</sup> Floor, Galaxy Arcade, Above Axis Bank, Nr. Galaxy Cinema,</p>
+
+                                                <p>Naroda, Ahmedabad.</p></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    </div>
+                     <div class="row">
+                    <div class="col-12">
+                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
+                            <div class="edugate-widget widget">
+                                <div class="title-widget">Bopal Branch</div>
+                                <div class="content-widget"><p>
+        						  </p>
+
+                                    <div class="info-list">
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-envelope"></i><a>bopal@blossominstitutes.com </a></li>
+                                            <li><i class="fa fa-phone"></i><a>99748 07060 </a></li>
+                                            <li><i class="fa fa-map-marker"></i><a><p>Shop No. 10,11 ,2<sup>nd</sup> Floor, Satyam Complex, B/H Abad Nagar Bus Stop, Bopal Main Road,</p>
+                                               			 <p>Bopal, Ahmedabad.</p></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
+                            <div class="edugate-widget widget">
+                                <div class="title-widget">Nikol Branch</div>
+                                <div class="content-widget"><p></p>
+
+                                    <div class="info-list">
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-envelope"></i><a>nikol@blossominstitutes.com </a></li>
+                                            <li><i class="fa fa-phone"></i><a>97146 22844 </a></li>
+                                            <li><i class="fa fa-map-marker"></i><a><p>303, 3<sup>rd</sup> Floor, Platinum Plaza. In Front of Rajhansh Cinema, Nikol.,</p>
+                                               			 <p>Nikol, Ahmedabad.</p></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
+                            <div class="edugate-widget widget">
+                                <div class="title-widget">Nanpura Branch (SURAT)</div>
+                                <div class="content-widget"><p></p>
+
+                                    <div class="info-list">
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-envelope"></i><a>nanpura@blossominstitutes.com </a></li>
+                                            <li><i class="fa fa-phone"></i><a>95372 12929 </a></li>
+                                            <li><i class="fa fa-map-marker"></i><a><p>2<sup>nd</sup>Floor , Jagdamba Nivas, Kakaji Street, Near Dharmendra Shoes,</p>
+                                                <p>Nanpura-Timalyawad. Nanpura.</p></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
+                            <div class="edugate-widget widget">
+                                <div class="title-widget">Adajan Branch (SURAT)</div>
+                                <div class="content-widget"><p>
+        						  </p>
+
+                                    <div class="info-list">
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-envelope"></i><a>adajan@blossominstitutes.com </a></li>
+                                            <li><i class="fa fa-phone"></i><a>95372 92929 </a></li>
+                                            <li><i class="fa fa-map-marker"></i><a><p>305 Green Plaza, L.P. Savani Circle, Adajan</p>
+                                            <p>Adajan, Surat.</p></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                     </div>
+              </div>
+              		<div class="row">
+                    <div class="col-12">
+                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
+                            <div class="edugate-widget widget">
+                                <div class="title-widget">City Light Branch (SURAT)</div>
+                                <div class="content-widget"><p></p>
+
+                                    <div class="info-list">
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-envelope"></i><a>citylight@blossominstitutes.com </a></li>
+                                            <li><i class="fa fa-phone"></i><a>95377 12929 </a></li>
+                                            <li><i class="fa fa-map-marker"></i><a><p>M-13/14, 3<sup>rd</sup> Floor,Shubhlaxmi Complex, Citylight. </p>
+                                                <p>Citylight, Surat.</p></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                     </div>
+              </div>
+          	
+            </div>
+            <div class="hyperlink">
+                <div class="pull-left hyper-left">
+                    <ul class="list-inline">
+                        <li><a href="index">HOME</a></li>
+                        <li><a href="Course">COURSES</a></li>
+                        <li><a href="AboutUs">ABOUT</a></li>
+
+                        <li><a href="Franchises">FRANCHISES</a></li>
+                        <li><a href="Contact">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="pull-right hyper-right">@ Copyright 2016 by Blossom Institutes All rights reserved</div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- THEME SETTING-->
+
+<!-- LOADING-->
+<!-- <div class="body-2 loading">
+    <div class="dots-loader"></div>
+</div> -->
+<!-- JAVASCRIPT -->
+
+<script src="{% static 'js/homepage.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="{% static 'js/jquery-smoothscroll.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/jquery.appear.js' %}"></script>
+<script src="{% static 'js/jquery.countTo.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src="{% static 'js/jquery.selectbox-0.2.min.js' %}"></script>
+<script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox-buttons.js' %}"></script>
+<!-- MAIN JS-->
+<script src="{% static 'js/main.js' %}"></script>
+<!-- LOADING SCRIPTS FOR PAGE-->
+<script>{% block js %}{% endblock %}</script>
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
+
