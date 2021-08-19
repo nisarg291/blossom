@@ -1,20 +1,23 @@
-
 {% load static %}
 <html>
-    <head>
 
-            <meta charset="utf-8">
+<head>
+
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" name="keywords" content="Blossom">
     <meta charset="utf-8" name="title" content="Blossom,Spoken, English, Learn English, Spoken English Ahmedabad">
-    <meta charset="utf-8" name="description" content="Blossom is an internationally recognized fast growing organization in educational industry that shapes the future of many.">
-  <title></title>
-                <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
+    <meta charset="utf-8" name="description"
+        content="Blossom is an internationally recognized fast growing organization in educational industry that shapes the future of many.">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link rel="shortcut icon" type="images/png" href="{% static 'images/fav.png' %}">
     <link type="text/css" rel="stylesheet" href="{% static 'css/Glyphter.css' %}">
     <!-- LIBRARY CSS-->
@@ -26,703 +29,715 @@
     <link type="text/css" rel="stylesheet" href="{% static 'css/jquery.fancybox.css' %}">
     <link type="text/css" rel="stylesheet" href="{% static 'css/jquery.fancybox-buttons.css' %}">
     <link type="text/css" rel="stylesheet" href="{% static 'css/mediaelementplayer.min.css' %}">
-    <!-- STYLE CSS    --><!--link(type="text/css", rel='stylesheet', href='css/color-1.css', id="color-skins")-->
-<link type="text/css" rel="stylesheet" href="{% static 'css/color-1.css' %}" id="color-skins">
-<link type="text/css" rel="stylesheet" href="{% static 'css/blossom.css' %}">
-  
- <script src="/jquery/jquery-2.1.4.min.js"></script>
+    <!-- STYLE CSS    -->
+    <!--link(type="text/css", rel='stylesheet', href='css/color-1.css', id="color-skins")-->
+    <link type="text/css" rel="stylesheet" href="{% static 'css/color-1.css' %}" id="color-skins">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/blossom.css' %}">
+    
+    <script src="/jquery/jquery-2.1.4.min.js"></script>
     <script src="/js-cookie/js.cookie.js"></script>
-    <script>if ((Cookies.get('color-skin') != undefined) && (Cookies.get('color-skin') != 'color-1')) {
-        $('#color-skins').attr('href', '/css/' + Cookies.get('color-skin') + '.css');
-    } else if ((Cookies.get('color-skin') == undefined) || (Cookies.get('color-skin') == 'color-1')) {
-        $('#color-skins').attr('href', 'css/color-1.css');
-    }
-
-
-    </script>
-    <style>
-        body{
-            background-color:bisque !important;
+    <script>
+        if ((Cookies.get('color-skin') != undefined) && (Cookies.get('color-skin') != 'color-1')) {
+            $('#color-skins').attr('href', '/css/' + Cookies.get('color-skin') + '.css');
+        } else if ((Cookies.get('color-skin') == undefined) || (Cookies.get('color-skin') == 'color-1')) {
+            $('#color-skins').attr('href', 'css/color-1.css');
         }
-*{
-    padding:0px;
-    margin:0px;
-}
-.header{
-    min-height:100vh;
-    width:100vw;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(static/images/blossombanner.jpg) !important;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-nav{
-    display:flex !important;
-    padding:2% 6% !important;
-    justify-content:space-between !important;
-    align-items:center !important;
-}
-nav img{
-    width:150px !important;
-}
-.nav-links{
-    flex:1 !important;
-    position:relative;
-    text-align:right !important;
-}
-.nav-links ul li{
-    list-style:none;
-    display:inline-block;
-    padding:8px 12px;
-    position:relative;
-}
-.nav-links ul li a{
-    color:#fff;
-    text-decoration:none;
-    font-size:13px;
-}
-.nav-links ul li::after{
-    content:'';
-    width:0%;
-    height:2px;
-    background:#f44336;
-    display:block;
-    margin:auto;
-    transition:0.5s;
-}
-nav .fa{
- display:none;
-}
-.nav-links ul li:hover::after{
-    width:100%;
-}
-.text-box{
-    width:90%;
-    color:#fff;
-    position:absolute;
-    top:55%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    text-align:center;
-}
-.text-box h1{
-    font-size:55px;
-}
-.text-box p{
-    margin:10px 0 40px;
-    font-size:30px;
-    color:#fff;
-}
-.hero-btn{
-    display:inline-block;
-    text-decoration:none;
-    color:#fff;
-    border:1px solid #fff;
-    font-size:13px;
-    padding:12px 34px;
-    position:relative;
-    cursor:pointor;
-}
-.hero-btn:hover{
-    border:1px solid #f44336;
-    background:#f44336;
-    transition:1s;
-    color:#fff;
-}
-.bg-white{
-    background-color:white !important;
-
-}
-@media(max-width:1100px){
-    .text-box h1{
-        font-size:25px;
-    }
-    .nav-links ul li{
-        display:block;
-    }
-    .nav-links{
-        position:absolute;
-        background:#f44336;
-        height:100vh;
-        width:200px;
-        top:0;
-        right:-200px;
-        text-align: left;
-        z-index:2;
-        transition:1s !important;
-    }
-    nav .fa{
-        display:block;
-        color:#fff;
-        margin:10px;
-        cursor:pointer;
-        font-size:22px;
-    }
-    .nav-links ul{
-        padding:30px;
-    }
-
-}
-
-.course, .coaching{
-    width:80%;
-    text-align:center;
-    margin:auto;
-    padding-top:100px;
-}
-
-.h1{
-    font-size:36px;
-    font-weight:600;
-}
-p{
-    color:#777;
-    font-size:14px;
-    font-weight:300;
-    line-height:22px;
-    padding: 10px;
-}
-.row{
-    margin-top: 5%;
-    display:flex;
-    justify-content: space-between;
-}
-.course-col{
-    flex-basis:31%;
-    background:#fff3f3;
-    border-radius:10px;
-    margin-bottom:5%;
-    padding:20px 12px;
-    box-sizing: border-box;
-    box-shadow:5px 5px 5px 0px rgba(0,0,0,0.2);
-    z-index:5;
-}
-h3{
-    text-align:center;
-    font-weight:600;
-    margin:10px 0;
-}
-
-.course-col:hover{
-    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.3);
-    z-index:10;
-}
-
-/*-------campus------*/
-.campus{
-    width:80%;
-    margin:auto;
-    text-align:center;
-    padding-top:50px;
-}
-.campus-col{
-    height:50vh !important;
-    width:30vw !important;
-    flex-basis:30%;
-    border-radius: 10px;
-    margin-bottom:50px;
-    position:relative;
-    overflow:hidden;
-    box-sizing: border-box;
-    box-shadow:5px 5px 5px 0px rgba(0,0,0,0.5);
-    z-index:5;
-}
-.campus-col:hover{
-    height:56vh !important;
-    width:38 vw !important;
-    margin-top:-3vh !important;
-    margin-left:-1vw !important;
-    margin-bottom:-3vh !important;
-    margin-right:-1vw !important;
-    box-shadow: 10px 10px 20px 0px rgba(160, 64, 64, 0.5);
-    z-index:10;
-    transition:0.7s;
-}
-
-.layer{
-    background: transparent;
-    height:100%;
-    width:100%;
-    position:absolute;
-    top:0;
-    left:0;
-    transition:0.5s;
-    
-}
-.layer:hover{
-    background:rgba(226,0,0,0.7);
-}
-.layer h3{
-    width:100%;
-    font-family: 'Roboto', sans-serif !important;
-    font-weight:500;
-    color:#fff;
-    font-size:26px;
-    bottom:0;
-    left:50%;
-    transform:translateX(-50%);
-    position:absolute;
-    opacity:0;
-    transition:0.5s;
-}
-.layer:hover h3{
-    bottom:49%;
-    opacity:1;
-}
-
-/*------- Facilities --------*/
-.facilities{
-    width:80%;
-    margin:auto;
-    text-align:center;
-    padding-top:100px;
-}
-.facilities-col{
-    height:70vh;
-    width:30vw;
-    background-color:powderblue !important;
-    flex-basis: 30%;
-    border-radius: 20px;
-    margin-bottom:5%;
-    text-align:left;
-    box-sizing: border-box;
-    box-shadow:8px 8px 8px 0px rgba(0,0,0,0.5);
-    z-index:5;
-    transition:0.5s;
-}
-.facilities-col:hover{
-    width:38vw;
-    height:75vh;
-    margin-top:-2vh;
-    margin-left:-1vw;
-    box-shadow: 15px 15px 20px 0px rgba(0,0,0,0.5);
-    z-index:10;
-}
-.facilities-col img{
-    width:100%;
-    height:300px !important;
-    border-radius:20px;
-}
-.facilities-col p{
-    margin-left:10px;
-    padding:0;
-    color:#000;
-    font-family: Roboto, sans-serif !important;
-}
-.facilities-col h3{
-    margin-left:10px;
-    margin-right:10px;
-    margin-top: 16px;
-    margin-bottom:15px;
-    text-align:left;
-    color:#000;
-    font-family: oswald !important;
-}
-@media(max-width:900px){
-    .row{
-        flex-direction:column;
-        width:100vw;  
-    }
-    .course, .coaching{
-    width:80vw;
-    text-align:center;
-    margin:5px 5px;
-    padding-top:50px;
-}
-
-.course h1{
-    text-align:center;
-    margin-left:18vw !important;
-    font-size:36px;
-    font-weight:600;
-}
-#coachingh1{
-    text-align:center;
-    margin-left:18vw !important;
-    font-size:36px;
-    font-weight:600;
-}
-.course p{
-    color:#777;
-    font-size:14px;
-    font-weight:300;
-    line-height:22px;
-    padding: 10px;
-}
-.row{
-    margin-right:5vw;
-    margin-top: 5%;
-    display:flex;
-    justify-content: space-between;
-}
-.course-col{
-    flex-basis:90%;
-    background:#fff3f3;
-    border-radius:10px;
-    margin-bottom:9%;
-    margin-left: 9%;
-    margin-right:5%;
-    padding:20px 12px;
-    box-sizing: border-box;
-    box-shadow:5px 5px 5px 0px rgba(0,0,0,0.2);
-    z-index:5;
-}
-h3{
-    text-align:center;
-    font-weight:600;
-    margin:10px 0;
-}
-h3 a{
-    font-size: 25px;
-    text-decoration:none;
-    color:#000;
-}
-p a{
-    text-decoration:none;
-    color:#000;
-}
-
-.course-col:hover{
-    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.3);
-    z-index:10;
-}
-
-/*-------campus------*/
-.campus{
-    width:80%;
-    margin:auto;
-    text-align:center;
-    padding-top:50px;
-}
-.campus-col{
-    height:50vh !important;
-    width:85vw !important;
-    flex-basis:30%;
-    border-radius: 10px;
-    margin-bottom:50px;
-    position:relative;
-    overflow:hidden;
-    box-sizing: border-box;
-    box-shadow:5px 5px 5px 0px rgba(0,0,0,0.5);
-    z-index:5;
-}
-.campus-col:hover{
-    height:56vh !important;
-    width:90 vw !important;
-    margin-top:-3vh !important;
-    margin-left:-1vw !important;
-    margin-bottom:-3vh !important;
-    margin-right:-1vw !important;
-    box-shadow: 10px 10px 20px 0px rgba(160, 64, 64, 0.5);
-    z-index:10;
-    transition:0.7s;
-}
-
-.layer{
-    background: transparent;
-    height:100%;
-    width:100%;
-    position:absolute;
-    top:0;
-    left:0;
-    transition:0.5s;
-    
-}
-.layer:hover{
-    background:rgba(226,0,0,0.7);
-}
-.layer h3{
-    width:100%;
-    font-family: 'Roboto', sans-serif !important;
-    font-weight:500;
-    color:#fff;
-    font-size:26px;
-    bottom:0;
-    left:50%;
-    transform:translateX(-50%);
-    position:absolute;
-    opacity:0;
-    transition:0.5s;
-}
-.layer:hover h3{
-    bottom:49%;
-    opacity:1;
-}
-#courseheading{
-    margin-left:18vw !important;
-}
-#coachingheading{
-    margin-left:18vw !important;
-}
-    /*-------campus------*/
-.campus{
-    width:80%;
-    margin:auto;
-    text-align:center;
-    padding-top:50px;
-}
-.campus-col{
-    height:50vh !important;
-    width: 85vw !important;
-    flex-basis:30%;
-    border-radius: 10px;
-    margin-bottom:50px;
-    position:relative;
-    overflow:hidden;
-    box-sizing: border-box;
-    box-shadow:5px 5px 5px 0px rgba(0,0,0,0.5);
-}
-.campus-col:hover{
-    height:56vh !important;
-    width: 90vw !important;
-    margin-top:-1vh !important;
-    margin-left:-1vw !important;
-    margin-bottom:3vh !important;
-    margin-right:-1vw !important;
-    box-shadow: 10px 10px 20px 0px rgba(160, 64, 64, 0.5);
-    z-index:10;
-    transition:0.7s;
-}
-
-    .facilities{
-    width:80%;
-    margin:auto;
-    text-align:center;
-    padding-top:50px;
-}
-.facilities-col{
-    height:50vh;
-    width:85vw;
-    background-color:powderblue !important;
-    flex-basis: 30%;
-    border-radius: 20px;
-    margin-bottom:10%;
-    text-align:left;
-    box-sizing: border-box;
-    box-shadow:8px 8px 8px 0px rgba(0,0,0,0.5);
-    z-index:5;
-    transition:0.5s;
-}
-.facilities-col:hover{
-    width:90vw;
-    height:55vh;
-    margin-top:-2vh;
-    margin-left:-1vw;
-    box-shadow: 15px 15px 20px 0px rgba(0,0,0,0.5);
-    z-index:10;
-}
-.facilities-col img{
-    width:100%;
-    height:300px !important;
-    /*border-radius:20px;*/
-}
-.facilities-col p{
-    margin-left:10px;
-    padding:0;
-    color:#000;
-    font-family: Roboto, sans-serif !important;
-}
-.facilities-col h3{
-    margin-left:10px;
-    margin-right:10px;
-    margin-top: 16px;
-    margin-bottom:15px;
-    text-align:left;
-    color:#000;
-    font-family: oswald !important;
-}
-}
-</style>
+    </script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
 
 </head>
+
 <body>
-<section class="header">
-    <nav class="">
-        <a href="#"><img src="{% static 'images/logo.jpg' %}"></a>
-        <div class="nav-links" id="navLinks">
-            <i class="fa fa-times" onclick="hideMenu();"></i>
-                            <ul class="">
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="{% url 'home' %}">Home</a>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="{% url 'AboutUs' %}">About Us</a>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="{% url 'Courses' %}">Courses</a>
-                                </li>
-                                
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Coaching</a>
-									<div class="dropdown-menu">
-                                        
-										<a class="nav-link dropdown-item" style="color:black !important" href="{% url 'Spoken' %}">Spoken English</a>
-										<a class="nav-link dropdown-item" style="color:black !important" href="{% url 'Ielts' %}">IELTS</a>
-										<a class="nav-link dropdown-item" style="color:black !important" href="{% url 'Personality' %}">Personality Development</a>
-									</div>
-								</li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Country</a>
-									<div class="dropdown-menu">
-                                        <a class="dropdown-item" style="color:black !important" href="{% url 'USA' %}">Study In USA</a>
-										<a class="dropdown-item" style="color:black !important" href="{% url 'Australia' %}">Study In Australia</a>
-                                        <a class="dropdown-item" style="color:black !important" href="{% url 'Canada' %}">Study In Canada</a>
-										<a class="dropdown-item" style="color:black !important" href="{% url 'Poland' %}">Study In Poland</a>
-                    					<a class="dropdown-item" style="color:black !important" href="{% url 'NewZealand' %}">Study In New Zealand</a>
-										<a class="dropdown-item" style="color:black !important" href="{% url 'Germany' %}">Study In Germany</a>
-                                        <a class="dropdown-item" style="color:black !important" href="{% url 'UK' %}">Study In UK</a>
-									</div>
-								</li>
-                                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
-									<div class="dropdown-menu">
-										<a class="dropdown-item" style="color:black !important" href="{% url 'BlossomCoaching' %}">Blossom Coaching</a>
-										<a class="dropdown-item" style="color:black !important" href="{% url 'BlossomImmigration' %}">Blossom Immigration</a>
-									</div>
-								</li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">News &amp; Events</a>
-									<div class="dropdown-menu">
-										<a class="dropdown-item" style="color:black !important" href="{% url 'UpCommingEvents' %}">UpComming Events</a>
-										<a class="dropdown-item" style="color:black !important" href="{% url 'Gallary' %}">Gallary</a>
-									</div>
-								</li>
-                               
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="{% url 'Contact' %}">Contact</a>
-                                </li>
-                                
-                                
-                            </ul>
+    <section class="header">
+       <nav class="navbar navbar-fixed-top" style="position:fixed;background:rgba(4, 9, 30,0.4) !important;width:100% !important;z-index:100">
+                    
+
+                        <!-- Mobile Menu Open Button -->
+                    
+            <a href="#"><img src="{% static 'images/logo.jpg' %}"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu();"></i>
+                <ul class="">
+                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                        <a class="nav-link" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                        <a class="nav-link" href="{% url 'AboutUs' %}">About Us</a>
+                    </li>
+                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                        <a class="nav-link" href="{% url 'Courses' %}">Courses</a>
+                    </li>
+
+                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Coaching</a>
+                        <div class="dropdown-menu">
+
+                            <a class="nav-link dropdown-item" style="color:black !important"
+                                href="{% url 'Spoken' %}">Spoken English</a>
+                            <a class="nav-link dropdown-item" style="color:black !important"
+                                href="{% url 'Ielts' %}">IELTS</a>
+                            <a class="nav-link dropdown-item" style="color:black !important"
+                                href="{% url 'Personality' %}">Personality Development</a>
+                        </div>
+                    </li>
+                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Country</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" style="color:black !important" href="{% url 'USA' %}">Study In
+                                USA</a>
+                            <a class="dropdown-item" style="color:black !important" href="{% url 'Australia' %}">Study
+                                In Australia</a>
+                            <a class="dropdown-item" style="color:black !important" href="{% url 'Canada' %}">Study In
+                                Canada</a>
+                            <a class="dropdown-item" style="color:black !important" href="{% url 'Poland' %}">Study In
+                                Poland</a>
+                            <a class="dropdown-item" style="color:black !important" href="{% url 'NewZealand' %}">Study
+                                In New Zealand</a>
+                            <a class="dropdown-item" style="color:black !important" href="{% url 'Germany' %}">Study In
+                                Germany</a>
+                            <a class="dropdown-item" style="color:black !important" href="{% url 'UK' %}">Study In
+                                UK</a>
+                        </div>
+                    </li>
+                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Services</a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" style="color:black !important"
+                                href="{% url 'BlossomCoaching' %}">Blossom Personal Coaching</a>
+                                   <a class="dropdown-item" style="color:black !important"
+                                href="{% url 'BlossomCoaching' %}">Blossom Coaching</a>
+                                <a class="dropdown-item" style="color:black !important"
+                                href="{% url 'BlossomImmigration' %}">Blossom Immigration</a>
+                        </div>
+                    </li>
+                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">News &amp; Events</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" style="color:black !important"
+                                href="{% url 'UpCommingEvents' %}">UpComming Events</a>
+                            <a class="dropdown-item" style="color:black !important"
+                                href="{% url 'Gallary' %}">Gallary</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                        <a class="nav-link" href="{% url 'Contact' %}">Contact</a>
+                    </li>
+
+
+                </ul>
+            </div>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu();"></i>
+            
+        </nav>
+        <div class="text-box">
+            <h1>World's Biggest Spoken English Institute</h1>
+            <p class="text-info-3">All Over India 22 Branches</p>
+            <a href="" class="hero-btn"><b>Visit us to know more</b></a>
+        </div>
+    </section>
+    
+
+    <!---------course---------->
+    <section class="course" id="course">
+        <h1>Services We Offer</h1>
+        <p id="courseheading">We Offer Best Services in the World.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3><a href="{% url 'BlossomPersonalCoaching' %}">Blossom Personal Coaching</a></h3>
+                <p><a href="{% url 'BlossomPersonalCoaching' %}">First Time in the World Only We Offer Personal Spoken English Coaching and also Offer Personal IELTS Coaching and at flexible timeing.</a></p>
+            </div>
+            <div class="course-col">
+                <h3><a href="{% url 'BlossomCoaching' %}">Blossom Group Coaching</a></h3>
+                <p><a href="{% url 'BlossomCoaching' %}">We also Offer Group Spoken English Coaching and also Offer Group IELTS Coaching and at flexible timeing</a></p>
+            </div>
+            <div class="course-col">
+                <h3><a href="{% url 'BlossomImmigration' %}">Blossom Immigration</a></h3>
+                <p><a href="{% url 'BlossomImmigration' %}">We are the First Institute Who Provide Immigration Process in 7 UK,USA,Canada,Austrelia,New Zealand,Poland,Germany </a></p>
+            </div>
+        </div>
+    </section>
+    <!---------coaching---------->
+    <section class="coaching">
+        <h1 id="coachingh1">Coachings We Offer</h1>
+        <p id="coachingheading">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <div class="row">
+            <div class="course-col">
+                <h3> <a href="{% url 'Spoken' %}">Spoken English</a></h3>
+                <p><a href="{% url 'Spoken' %}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ab
+                        blanditiis repellat omnis labore eos quia esse, qui nisi expedita odio accusamus voluptate,
+                        libero quas eligendi nemo explicabo sed dolor.</a></p>
+            </div>
+            <div class="course-col">
+                <h3><a href="{% url 'Ielts' %}">IELTS</a></h3>
+                <p><a href="{% url 'Ielts' %}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ab
+                        blanditiis repellat omnis labore eos quia esse, qui nisi expedita odio accusamus voluptate,
+                        libero quas eligendi nemo explicabo sed dolor.</a></p>
+            </div>
+            <div class="course-col">
+                <h3> <a href="{% url 'Personality' %}">Personality Development</a></h3>
+                <p><a href="{% url 'Personality' %}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ab
+                        blanditiis repellat omnis labore eos quia esse, qui nisi expedita odio accusamus voluptate,
+                        libero quas eligendi nemo explicabo sed dolor.</a></p>
+            </div>
+        </div>
+    </section>
+    <section class="campus">
+        <h1>Blossom Immigration</h1>
+        <p>Blossom is supporting student immigraions in below countries</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="static/images/USA.jpg" height="100%" width="100%">
+                <div class="layer">
+                    <h3>USA</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="static/images/Australia.jpg" height="100%" width="100%">
+                <div class="layer">
+                    <h3>Australia</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="{% static 'images/Canada.jpg' %}" height="100%" width="100%">
+                <div class="layer">
+                    <h3>Canada</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="{% static 'images/newzealand.jpg' %}" height="100%" width="100%">
+                <div class="layer">
+                    <h3>New zealand</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="{% static 'images/Germany.jpg' %}" height="100%" width="100%">
+                <div class="layer">
+                    <h3>Germany</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="{% static 'images/UK.jpg' %}" height="100%" width="100%">
+                <div class="layer">
+                    <h3>UK</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ---------Facilities-------- -->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Blossom Give Best Facilities to Students</p>
+        <div class="row">
+            <div class="facilities-col col-12 col-sm-12">
+                <img src="{% static 'images/stempgarenty.jpg' %}" height="100%" width="100%" alt="">
+                <h3>Stemp Paper Garenty</h3>
+                <p>First Time In India We Provide Stemp Paper Garenty that Student Can speak in English after completion
+                    of the Course.</p>
+            </div>
+            <div class="facilities-col col-sm-12">
+                <img src="{% static 'images/banner4.jpg' %}" alt="">
+                <h3>Life Time MemberShip Card</h3>
+                <p>Our Spoken English Institute Provide Life Time Membership Card.In Student can join our courses
+                    multiple times</p>
+            </div>
+            <div class="facilities-col col-sm-12">
+                <img src="{% static 'images/banner5.jpg' %}" alt="">
+                <h3>Flexible Batch Timing</h3>
+                <p>We Provide Flexible Batch Timing or suitable timing for Students.</p>
+            </div>
+        </div>
+    </section>
+    <!-- --------testimonials ------- -->
+    <!-- <section class="testimonials">
+    <h1>What our Student Says</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <div class="row">
+    <div class="testimonials-col">
+        <img src="images/user1.jpg">
+        <div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni culpa excepturi minima mollitia. Tenetur ut, placeat alias nobis totam accusantium sapiente id rerum praesentium accusamus, voluptates iste, nemo a et.</p>
+            <h3>Nisarg Adalja</h3>
+            <p> rating  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
+        </div>
+    </div>
+    <div class="testimonials-col">
+        <img src="images/user2.jpg">
+        <div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni culpa excepturi minima mollitia. Tenetur ut, placeat alias nobis totam accusantium sapiente id rerum praesentium accusamus, voluptates iste, nemo a et.</p>
+            <h3> Adalja</h3>
+            <p> rating   <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <i class="far fa-star"></i></p>
+        </div>
+    </div>
+    </div>
+
+</section> -->
+    <section class="testimonials">
+        <h1>What our Student Says</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner center">
+                {% for student in students %}
+                <div class="carousel-item mb-3 center {% if forloop.counter == 1%}active {% endif %}">
+                    <div class="row">
+                        <div class="testimonials-col">
+                            <img src="media/{{student.image}}">
+                            <div>
+                                <p>{{student.message|slice:"0:150"}}..</p>
+                                <h3>{{student.first_name}} {{student.last_name}}</h3>
+                                <p> rating {%if student.ratings == 4 %} <i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="far fa-star"></i>{% endif %}
+                                    {%if student.ratings == 5 %} <i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i>{% endif %}
+                                    {%if student.ratings == 3 %} <i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i
+                                        class="far fa-star"></i>{% endif %}
+                                    {%if student.ratings == 2 %} <i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                        class="far fa-star"></i>{% endif %}
+                                    {%if student.ratings == 1 %} <i class="fas fa-star"></i><i
+                                        class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                        class="far fa-star"></i>{% endif %}
+                                </p>
                             </div>
-    </div>
-    <i class="fa fa-bars" onclick="showMenu();"></i>
-    </nav>
-    <div class="text-box">
-        <h1>World's Biggest Spoken English Institute</h1>
-        <p class="text-info-3">All Over India 22 Branches</p>
-        <a href="" class="hero-btn"><b>Visit us to know more</b></a>
-    </div>
-</section>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <a class="carousel-control-prev mb-5 mt-3" style="" href="#carouselExampleIndicators" role="button"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" style="background-color:black !important"
+                    aria-hidden="true"></span>
+                <span class="sr-only mt-1" style="background-color:black !important">Previous</span>
+            </a>
+            <a class="carousel-control-next mb-5 ml-3 mt-3" href="#carouselExampleIndicators" role="button"
+                data-slide="next">
+                <span class="carousel-control-next-icon mt-1"
+                    style="color:black !important;background-color:black !important" aria-hidden="true"></span>
+                <span class="sr-only mt-1" style="background-color:black !important">Next</span>
+            </a>
+        </div>
+        <div class="text-center"><a class="btn btn-success mb-5 rating"
+                style="color:black !important;border-radius:15px !important" href=""><b>Give Rating</b></a></div>
+    </section>
 
-<!---------course---------->
-<section class="course">
-    <h1>Courses We Offer</h1>
-    <p id="courseheading">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-    <div class="row">
-        <div class="course-col">
-            <h3>Intermediate</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ab blanditiis repellat omnis labore eos quia esse, qui nisi expedita odio accusamus voluptate, libero quas eligendi nemo explicabo sed dolor.</p>
-        </div>
-         <div class="course-col">
-            <h3>Degree</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ab blanditiis repellat omnis labore eos quia esse, qui nisi expedita odio accusamus voluptate, libero quas eligendi nemo explicabo sed dolor.</p>
-        </div>
-         <div class="course-col">
-            <h3>Post Grduation</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ab blanditiis repellat omnis labore eos quia esse, qui nisi expedita odio accusamus voluptate, libero quas eligendi nemo explicabo sed dolor.</p>
-        </div>
-    </div>
-</section>
-<!---------coaching---------->
-<section class="coaching">
-    <h1 id="coachingh1">Coachings We Offer</h1>
-    <p id="coachingheading">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-    <div class="row">
-       <div class="course-col">
-            <h3> <a href="{% url 'Spoken' %}">Spoken English</a></h3>
-            <p><a href="{% url 'Spoken' %}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ab blanditiis repellat omnis labore eos quia esse, qui nisi expedita odio accusamus voluptate, libero quas eligendi nemo explicabo sed dolor.</a></p>
-         </div>
-        <div class="course-col">
-            <h3><a href="{% url 'Ielts' %}">IELTS</a></h3>
-            <p><a href="{% url 'Ielts' %}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ab blanditiis repellat omnis labore eos quia esse, qui nisi expedita odio accusamus voluptate, libero quas eligendi nemo explicabo sed dolor.</a></p>
-        </div>
-       <div class="course-col">
-            <h3> <a href="{% url 'Personality' %}">Personality Development</a></h3>
-            <p><a href="{% url 'Personality' %}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ab blanditiis repellat omnis labore eos quia esse, qui nisi expedita odio accusamus voluptate, libero quas eligendi nemo explicabo sed dolor.</a></p>
-        </div>
-    </div>
-</section>
-<section class="campus">
-<h1>Blossom Immigration</h1>
-<p>Blossom is supporting student immigraions in below countries</p>
-<div class="row">
-    <div class="campus-col">
-        <img src="static/images/USA.jpg" height="100%" width="100%">
-        <div class="layer"><h3>USA</h3></div>
-    </div>
-    <div class="campus-col">
-        <img src="static/images/Australia.jpg" height="100%" width="100%">
-        <div class="layer"><h3>Australia</h3></div>
-    </div>
-    <div class="campus-col">
-        <img src="{% static 'images/Canada.jpg' %}"  height="100%" width="100%">
-        <div class="layer"><h3>Canada</h3></div>
-    </div>
-    <div class="campus-col">
-        <img src="{% static 'images/newzealand.jpg' %}"  height="100%" width="100%">
-        <div class="layer"><h3>New zealand</h3></div>
-    </div>
-    <div class="campus-col">
-        <img src="{% static 'images/Germany.jpg' %}"  height="100%" width="100%">
-        <div class="layer"><h3>Germany</h3></div>
-    </div>
-    <div class="campus-col">
-        <img src="{% static 'images/UK.jpg' %}"  height="100%" width="100%">
-        <div class="layer"><h3>UK</h3></div>
-    </div>
+    <section class='cta'>
+        <h3>Enroll For Our Various Courses<br>Take our best Immigration Services</h3>
+        <a href="" class="hero-btn">CONTACT US</a>
 
-</div>
-</section>
-<!-- ---------Facilities-------- -->
-<section class="facilities">
-<h1>Our Facilities</h1>
-<p>Blossom Give Best Facilities to Students</p>
-<div class="row">
-    <div class="facilities-col col-12 col-sm-12">
-        <img src="{% static 'images/stempgarenty.jpg' %}" height="100%" width="100%" alt="">
-        <h3>Stemp Paper Garenty</h3>
-        <p>First Time In India We Provide Stemp Paper Garenty that Student Can speak in English after completion of the Course.</p>
-    </div>
-    <div class="facilities-col col-sm-12">
-        <img src="{% static 'images/banner4.jpg' %}" alt="">
-        <h3>Life Time MemberShip Card</h3>
-        <p>Our Spoken English Institute Provide Life Time Membership Card.In Student can join our courses multiple times</p>
-    </div>
-    <div class="facilities-col col-sm-12">
-        <img src="{% static 'images/banner5.jpg' %}" alt="">
-        <h3>Flexible Batch Timing</h3>
-        <p>We Provide Flexible Batch Timing or suitable timing for Students.</p>
-    </div>
-</div>
-</section>
+    </section>
+    <footer>
+        <div class="footer-top" style="border: 1px solid #FFF;">
+            <!-- <div class="container">
+            <div class="footer-top-wrapper">
+                <div class="footer-top-left"><p class="footer-top-focus">BECOME AN INSTRUCTOR</p>
 
-<script src="{% static 'js/homepage.js' %}"></script>
-<script src="{% static 'js/script.js' %}"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+                    <p class="footer-top-text">Join thousand of instructors and earn money hassle free!</p></div>
+                <div class="footer-top-right">
+                    <button onclick="window.location.href='Contact.jsp'" class="btn btn-blue btn-bold"><span>GET STARTED NOW</span></button>
+                </div>
+            </div>
+        </div> -->
+        </div>
+        <div class="footer-main">
+            <div class="container-fluid">
+                <div class="footer-main-wrapper">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="col-md-4 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">Maninagar Branch</div>
+                                    <div class="content-widget">
+                                        <p>
+                                        </p>
 
-<script src="{% static 'js/jquery-smoothscroll.js' %}"></script>
-<script src="{% static 'js/owl.carousel.min.js' %}"></script>
-<script src="{% static 'js/jquery.appear.js' %}"></script>
-<script src="{% static 'js/jquery.countTo.js' %}"></script>
-<script src="{% static 'js/wow.min.js' %}"></script>
-<script src="{% static 'js/jquery.selectbox-0.2.min.js' %}"></script>
-<script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
-<script src="{% static 'js/jquery.fancybox.js' %}"></script>
-<script src="{% static 'js/jquery.fancybox-buttons.js' %}"></script>
-<!-- MAIN JS-->
-<script src="{% static 'js/main.js' %}"></script>
-<!-- LOADING SCRIPTS FOR PAGE-->
-<script>
-    var navLinks=document.getElementById("navLinks");
-    function showMenu(){
-        navLinks.style.right="0";
-    }
-    function hideMenu(){
-        navLinks.style.right="-200px";
-    }
-</script>
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i
+                                                        class="fas fa-envelope"></i><a>maninagar@blossominstitutes.com</a>
+                                                </li>
+                                                <li><i class="fa fa-phone"></i><a href="tel:7802043370">93758 26472 </a>
+                                                </li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p>1<sup>st</sup> Floor, Nr. Farki, Kesarkunj Complex,In Front
+                                                            Of AMC Zonal Office, Krishnabaug Char Rasta,</p>
+                                                        <p>Maninagar, Ahmedabad.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">Bapunagar Branch</div>
+                                    <div class="content-widget">
+                                        <p></p>
+
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i
+                                                        class="fas fa-envelope"></i><a>bapunagar@blossominstitutes.com</a>
+                                                </li>
+                                                <li><i class="fa fa-phone"></i><a href="tel:9924020222">99240 20222 </a>
+                                                </li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p>1<sup>st</sup> Floor, Maruti Plaza, Near, Shakti Chavana,</p>
+                                                        <p>Bhidbhanjan Road, Bapunagar.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">Nehrunagar Branch</div>
+                                    <div class="content-widget">
+                                        <p></p>
+
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i
+                                                        class="fas fa-envelope"></i><a>nehrunagar@blossominstitutes.com</a>
+                                                </li>
+                                                <li><i class="fa fa-phone"></i><a href="tel:9375860397">93758 60397 </a>
+                                                </li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p>3<sup>rd</sup> Floor, Shailibhandra Complex, Above Das
+                                                            khaman, infront of Jain Temple,</p>
+
+                                                        <p>nehrunagar Cross Roads, Ahmedabad.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="col-md-4 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">Mota Varachha</div>
+                                    <div class="content-widget">
+                                        <p></p>
+
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-envelope"></i><a>contact@blossominstitutes.com </a>
+                                                </li>
+                                                <li><i class="fa fa-phone"></i><a href="tel:9727172929">9727172929 </a>
+                                                </li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p>B/303 Aditya complex Nr. Utran-kapodra Bridge, Above ICICI
+                                                            bank,VIP Circle</p>
+                                                        <p>Mota Varachha, Gujarat.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">Ghatlodiya Branch</div>
+                                    <div class="content-widget">
+                                        <p>
+                                        </p>
+
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-envelope"></i><a>ghatlodiya@blossominstitutes.com
+                                                    </a></li>
+                                                <li><i class="fa fa-phone"></i><a href="tel:9574042225">95740 42225 </a>
+                                                </li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p>1<sup>st</sup> Floor, Shrikunj Shopping Center, Nr. Veer
+                                                            Dairy, Prabhat Chowk,</p>
+                                                        <p>Ghatlodiya, Ahmedabad.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">Shahibaug Branch</div>
+                                    <div class="content-widget">
+                                        <p></p>
+
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i
+                                                        class="fas fa-envelope"></i><a>shahibaug@blossominstitutes.com</a>
+                                                </li>
+                                                <li><i class="fa fa-phone"></i><a>97235 56029 </a></li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p>3<sup>rd</sup> Floor, Above HDFC Bank, Ashtmangal Complex,
+                                                            Nr. Rajasthan Hospital,</p>
+                                                        <p>Shahibaug, Ahmedabad.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+
+                            <div class="col-md-4 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">Chandkheda Branch</div>
+                                    <div class="content-widget">
+                                        <p></p>
+
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i
+                                                        class="fas fa-envelope"></i><a>chandkheda@blossominstitutes.com</a>
+                                                </li>
+                                                <li><i class="fa fa-phone"></i><a>96248 86029 </a></li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p>1<sup>st</sup> Floor, Sahjanand Complex, Nr. Sona Cross Road,
+                                                            New C.G. Road,</p>
+
+                                                        <p>Chandkheda, Ahmedabad.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">Naroda Branch</div>
+                                    <div class="content-widget">
+                                        <p></p>
+
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-envelope"></i><a>naroda@blossominstitutes.com </a>
+                                                </li>
+                                                <li><i class="fa fa-phone"></i><a>90331 60781</a></li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p> E 402, 4<sup>th</sup> Floor, Galaxy Arcade, Above Axis Bank,
+                                                            Nr. Galaxy Cinema,</p>
+
+                                                        <p>Naroda, Ahmedabad.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">Bopal Branch</div>
+                                    <div class="content-widget">
+                                        <p>
+                                        </p>
+
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-envelope"></i><a>bopal@blossominstitutes.com </a>
+                                                </li>
+                                                <li><i class="fa fa-phone"></i><a>99748 07060 </a></li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p>Shop No. 10,11 ,2<sup>nd</sup> Floor, Satyam Complex, B/H
+                                                            Abad Nagar Bus Stop, Bopal Main Road,</p>
+                                                        <p>Bopal, Ahmedabad.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="col-md-4 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">Nikol Branch</div>
+                                    <div class="content-widget">
+                                        <p></p>
+
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-envelope"></i><a>nikol@blossominstitutes.com </a>
+                                                </li>
+                                                <li><i class="fa fa-phone"></i><a>97146 22844 </a></li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p>303, 3<sup>rd</sup> Floor, Platinum Plaza. In Front of
+                                                            Rajhansh Cinema, Nikol.,</p>
+                                                        <p>Nikol, Ahmedabad.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-3 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">Nanpura Branch (SURAT)</div>
+                                    <div class="content-widget">
+                                        <p></p>
+
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-envelope"></i><a>nanpura@blossominstitutes.com </a>
+                                                </li>
+                                                <li><i class="fa fa-phone"></i><a>95372 12929 </a></li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p>2<sup>nd</sup>Floor , Jagdamba Nivas, Kakaji Street, Near
+                                                            Dharmendra Shoes,</p>
+                                                        <p>Nanpura-Timalyawad. Nanpura.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">Adajan Branch (SURAT)</div>
+                                    <div class="content-widget">
+                                        <p>
+                                        </p>
+
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-envelope"></i><a>adajan@blossominstitutes.com </a>
+                                                </li>
+                                                <li><i class="fa fa-phone"></i><a>95372 92929 </a></li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p>305 Green Plaza, L.P. Savani Circle, Adajan</p>
+                                                        <p>Adajan, Surat.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+
+                            <div class="col-md-4 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">City Light Branch (SURAT)</div>
+                                    <div class="content-widget">
+                                        <p></p>
+
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-envelope"></i><a>citylight@blossominstitutes.com
+                                                    </a></li>
+                                                <li><i class="fa fa-phone"></i><a>95377 12929 </a></li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p>M-13/14, 3<sup>rd</sup> Floor,Shubhlaxmi Complex,
+                                                            Citylight.
+                                                        </p>
+                                                        <p>Citylight, Surat.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="hyperlink">
+                    <div class="hyper-left">
+                        <ul class="list-inline col-12">
+                            <li><a href="{% url 'home' %}" class="float-left ml-3 mr-5">HOME</a></li>
+                            <li><a href="{% url 'Courses' %}" class="float-left mr-5">COURSES</a></li>
+                            <li><a href="{% url 'AboutUs' %}" class="float-left ml-5">ABOUT</a></li>
+                            <li><a href="#" class="float-left ml-5 mr-5">Coaching</a></li>
+                            <li><a href="{% url 'Contact' %}" class="float-left mr-5">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <div class="icons">
+                        <i class="fab fa-facebook-square ml-2"></i>
+                        <i class="fab fa-twitter ml-2"></i>
+                        <i class="fab fa-instagram ml-2"></i>
+                        <i class="fab fa-linkedin ml-2"></i>
+                    </div>
+                    <br>
+                    <div class="pull-right hyper-right ml-5 mr-5 mb-2">Made with <i class="fas fa-heart"></i> by
+                        Nisarg
+                        Adalja</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'js/homepage.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <script src="{% static 'js/jquery-smoothscroll.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/jquery.appear.js' %}"></script>
+    <script src="{% static 'js/jquery.countTo.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script src="{% static 'js/jquery.selectbox-0.2.min.js' %}"></script>
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox-buttons.js' %}"></script>
+    <!-- MAIN JS-->
+    <script src="{% static 'js/main.js' %}"></script>
+    <!-- LOADING SCRIPTS FOR PAGE-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
 </body>
+
 </html>
