@@ -1,8 +1,9 @@
 from django.shortcuts import render
-
+from .models import Student
 # Create your views here.
 def home(request):
-    return render(request,"blossom.html")
+    students=Student.objects.all();
+    return render(request,"blossom.html",{'students':students})
 
 def BlossomEducation(request):
     return render(request,"blossomEducation.html")
@@ -14,6 +15,10 @@ def BlossomImmigration(request):
 
 def BlossomCoaching(request):
     return render(request,"blossomCoaching.html")
+
+def BlossomPersonalCoaching(request):
+    return render(request,"blossomPersonalCoaching.html")
+
 
 def Spoken(request):
     return render(request,"spoken.html")
