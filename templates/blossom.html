@@ -50,7 +50,7 @@
 <body>
     <section class="header">
        <nav class="navbar navbar-fixed-top" style="position:fixed;background:rgba(4, 9, 30,0.4) !important;width:100% !important;z-index:100">
-                    
+       
 
                         <!-- Mobile Menu Open Button -->
                     
@@ -106,7 +106,7 @@
                             aria-haspopup="true" aria-expanded="false">Services</a>
                           <div class="dropdown-menu">
                             <a class="dropdown-item" style="color:black !important"
-                                href="{% url 'BlossomCoaching' %}">Blossom Personal Coaching</a>
+                                href="{% url 'BlossomPersonalCoaching' %}">Blossom Personal Coaching</a>
                                    <a class="dropdown-item" style="color:black !important"
                                 href="{% url 'BlossomCoaching' %}">Blossom Coaching</a>
                                 <a class="dropdown-item" style="color:black !important"
@@ -123,11 +123,31 @@
                                 href="{% url 'Gallary' %}">Gallary</a>
                         </div>
                     </li>
-
                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                         <a class="nav-link" href="{% url 'Contact' %}">Contact</a>
                     </li>
-
+                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                        <a><i class="fab fa-facebook-square ml-2"></i></a>
+                    </li>
+                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                        <a><i class="fab fa-twitter ml-2"></i></a>
+                        </li>
+                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    
+                        <a><i class="fab fa-instagram ml-2"></i></a>
+                    </li>
+                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                        <a><i class="fab fa-linkedin ml-2"></i></a>
+                    </li>
+                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                        <a><i class="fab fa-youtube"></i></a>
+                    </li>
+                   
+                   
+                 
+                    
+              
+            </div>
 
                 </ul>
             </div>
@@ -138,7 +158,7 @@
         <div class="text-box">
             <h1>World's Biggest Spoken English Institute</h1>
             <p class="text-info-3">All Over India 22 Branches</p>
-            <a href="" class="hero-btn"><b>Visit us to know more</b></a>
+            <a href="#course" class="hero-btn"><b>Visit us to know more</b></a>
         </div>
     </section>
     
@@ -150,11 +170,11 @@
         <div class="row">
             <div class="course-col">
                 <h3><a href="{% url 'BlossomPersonalCoaching' %}">Blossom Personal Coaching</a></h3>
-                <p><a href="{% url 'BlossomPersonalCoaching' %}">First Time in the World Only We Offer Personal Spoken English Coaching and also Offer Personal IELTS Coaching and at flexible timeing.</a></p>
+                <p><a href="{% url 'BlossomPersonalCoaching' %}">First Time in the World Only We Offer Personal Spoken English Coaching and also Offer Personal IELTS Coaching and at flexible time.</a></p>
             </div>
             <div class="course-col">
                 <h3><a href="{% url 'BlossomCoaching' %}">Blossom Group Coaching</a></h3>
-                <p><a href="{% url 'BlossomCoaching' %}">We also Offer Group Spoken English Coaching and also Offer Group IELTS Coaching and at flexible timeing</a></p>
+                <p><a href="{% url 'BlossomCoaching' %}">We also Offer Group Spoken English Coaching and also Offer Group IELTS Coaching and at flexible time</a></p>
             </div>
             <div class="course-col">
                 <h3><a href="{% url 'BlossomImmigration' %}">Blossom Immigration</a></h3>
@@ -165,25 +185,19 @@
     <!---------coaching---------->
     <section class="coaching">
         <h1 id="coachingh1">Coachings We Offer</h1>
-        <p id="coachingheading">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p id="coachingheading">We Offer Best Coaching in the World.</p>
         <div class="row">
             <div class="course-col">
                 <h3> <a href="{% url 'Spoken' %}">Spoken English</a></h3>
-                <p><a href="{% url 'Spoken' %}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ab
-                        blanditiis repellat omnis labore eos quia esse, qui nisi expedita odio accusamus voluptate,
-                        libero quas eligendi nemo explicabo sed dolor.</a></p>
+                <p><a href="{% url 'Spoken' %}">We Provide Spoken English Coaching as Personal and Group classes in Affordable price.</a></p>
             </div>
             <div class="course-col">
                 <h3><a href="{% url 'Ielts' %}">IELTS</a></h3>
-                <p><a href="{% url 'Ielts' %}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ab
-                        blanditiis repellat omnis labore eos quia esse, qui nisi expedita odio accusamus voluptate,
-                        libero quas eligendi nemo explicabo sed dolor.</a></p>
+                <p><a href="{% url 'Ielts' %}">We Provide Excelent IELTS Coaching as personal and Group clasess in Affordable price.</a></p>
             </div>
             <div class="course-col">
                 <h3> <a href="{% url 'Personality' %}">Personality Development</a></h3>
-                <p><a href="{% url 'Personality' %}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ab
-                        blanditiis repellat omnis labore eos quia esse, qui nisi expedita odio accusamus voluptate,
-                        libero quas eligendi nemo explicabo sed dolor.</a></p>
+                <p><a href="{% url 'Personality' %}">We Provide Personality Development Course in Affordable price.</a></p>
             </div>
         </div>
     </section>
@@ -194,37 +208,49 @@
             <div class="campus-col">
                 <img src="static/images/USA.jpg" height="100%" width="100%">
                 <div class="layer">
-                    <h3>USA</h3>
+                    <h3>USA
+                    <p class="para" style="color:#fff !important">We have done many students admissions in Top University in USA.</p>
+                    </h3>
                 </div>
             </div>
             <div class="campus-col">
                 <img src="static/images/Australia.jpg" height="100%" width="100%">
                 <div class="layer">
-                    <h3>Australia</h3>
+                    <h3>Australia
+                        <p class="para" style="color:#fff !important">We have done many students admissions in Top University in Australia.</p>
+                    </h3>
                 </div>
             </div>
             <div class="campus-col">
                 <img src="{% static 'images/Canada.jpg' %}" height="100%" width="100%">
                 <div class="layer">
-                    <h3>Canada</h3>
+                    <h3>Canada
+                        <p class="para" style="color:#fff !important">We have done many students admissions in Top University in Canada.</p>
+                    </h3>
                 </div>
             </div>
             <div class="campus-col">
                 <img src="{% static 'images/newzealand.jpg' %}" height="100%" width="100%">
                 <div class="layer">
-                    <h3>New zealand</h3>
+                    <h3>New zealand
+                        <p class="para" style="color:#fff !important">We  admissions  have done many studentsin Top University in New Zealand.</p>
+                    </h3>
                 </div>
             </div>
             <div class="campus-col">
                 <img src="{% static 'images/Germany.jpg' %}" height="100%" width="100%">
                 <div class="layer">
-                    <h3>Germany</h3>
+                    <h3>Germany
+                    <p class="para" style="color:#fff !important">We  have done many students admissions in Top University in Germany.</p>
+                    </h3>
                 </div>
             </div>
             <div class="campus-col">
                 <img src="{% static 'images/UK.jpg' %}" height="100%" width="100%">
                 <div class="layer">
-                    <h3>UK</h3>
+                    <h3>UK
+                        <p class="para" style="color:#fff !important">We  have done many students admissions in Top University in UK.</p>
+                    </h3>
                 </div>
             </div>
 
@@ -278,9 +304,40 @@
     </div>
 
 </section> -->
+<!-- ----------------Events----------------------- -->
+   <section class="events">
+         <h1>UpComing Events</h1>
+        <p>Upcoming Events(festivals) which will happen(Celebrate) in our Institute.</p>
+        <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner center">
+                {% for event in events %}
+                <div class="carousel-item mb-3 center {% if forloop.counter == 1%}active {% endif %}">
+                    <img class="d-block w-100" class="carousalimage" width="70vh" height="80%" src="media/{{event.image}}" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h3 style="color:#000;background:#fff">{{event.nameofevent}}</h3>
+                    <h5 style="color:#000;background:#fff">{{event.message}}</h5>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <a class="carousel-control-prev mb-5 mt-3" href="#carouselExampleIndicators1" role="button"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" style="background-color:black !important"
+                    aria-hidden="true"></span>
+                <span class="sr-only mt-1" style="background-color:black !important">Previous</span>
+            </a>
+            <a class="carousel-control-next mb-5 ml-3 mt-3" href="#carouselExampleIndicators1" role="button"
+                data-slide="next">
+                 <span class="carousel-control-next-icon mt-1"
+                    style="color:black !important;background-color:black !important" aria-hidden="true"></span>
+                <span class="sr-only mt-1" style="background-color:black !important">Next</span>
+            </a>
+        </div>
+    </section>
+<!-- ----------------Testimonials------------ -->
     <section class="testimonials">
         <h1>What our Student Says</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <p>Our Students Ratings says everything about us.</p>
 
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner center">
@@ -288,7 +345,7 @@
                 <div class="carousel-item mb-3 center {% if forloop.counter == 1%}active {% endif %}">
                     <div class="row">
                         <div class="testimonials-col">
-                            <img src="media/{{student.image}}">
+                            <img src="{{student.image.url}}">
                             <div>
                                 <p>{{student.message|slice:"0:150"}}..</p>
                                 <h3>{{student.first_name}} {{student.last_name}}</h3>
@@ -328,12 +385,13 @@
             </a>
         </div>
         <div class="text-center"><a class="btn btn-success mb-5 rating"
-                style="color:black !important;border-radius:15px !important" href=""><b>Give Rating</b></a></div>
+                style="color:black !important;border-radius:15px !important" href="{% url 'rating'%}"><b>Give Rating</b></a></div>
     </section>
 
+    
     <section class='cta'>
         <h3>Enroll For Our Various Courses<br>Take our best Immigration Services</h3>
-        <a href="" class="hero-btn">CONTACT US</a>
+        <a href="{% url 'Contact' %}" class="hero-btn">CONTACT US</a>
 
     </section>
     <footer>
@@ -364,7 +422,7 @@
                                         <div class="info-list">
                                             <ul class="list-unstyled">
                                                 <li><i
-                                                        class="fas fa-envelope"></i><a>maninagar@blossominstitutes.com</a>
+                                                        class="fas fa-envelope"></i><a href="mailto:maninagar@blossominstitutes.com">maninagar@blossominstitutes.com</a>
                                                 </li>
                                                 <li><i class="fa fa-phone"></i><a href="tel:7802043370">93758 26472 </a>
                                                 </li>
@@ -387,7 +445,7 @@
                                         <div class="info-list">
                                             <ul class="list-unstyled">
                                                 <li><i
-                                                        class="fas fa-envelope"></i><a>bapunagar@blossominstitutes.com</a>
+                                                        class="fas fa-envelope"></i><a href="mailto:bapunagar@blossominstitutes.com">bapunagar@blossominstitutes.com</a>
                                                 </li>
                                                 <li><i class="fa fa-phone"></i><a href="tel:9924020222">99240 20222 </a>
                                                 </li>
@@ -410,7 +468,7 @@
                                         <div class="info-list">
                                             <ul class="list-unstyled">
                                                 <li><i
-                                                        class="fas fa-envelope"></i><a>nehrunagar@blossominstitutes.com</a>
+                                                        class="fas fa-envelope"></i><a href="mailto:nehrunagar@blossominstitutes.com">nehrunagar@blossominstitutes.com</a>
                                                 </li>
                                                 <li><i class="fa fa-phone"></i><a href="tel:9375860397">93758 60397 </a>
                                                 </li>
@@ -444,7 +502,7 @@
 
                                         <div class="info-list">
                                             <ul class="list-unstyled">
-                                                <li><i class="fas fa-envelope"></i><a>contact@blossominstitutes.com </a>
+                                                <li><i class="fas fa-envelope"></i><a href="mailto:contact@blossominstitutes.com">contact@blossominstitutes.com </a>
                                                 </li>
                                                 <li><i class="fa fa-phone"></i><a href="tel:9727172929">9727172929 </a>
                                                 </li>
@@ -467,7 +525,7 @@
 
                                         <div class="info-list">
                                             <ul class="list-unstyled">
-                                                <li><i class="fas fa-envelope"></i><a>ghatlodiya@blossominstitutes.com
+                                                <li><i class="fas fa-envelope"></i><a href="mailto:ghatlodiya@blossominstitutes.com">ghatlodiya@blossominstitutes.com
                                                     </a></li>
                                                 <li><i class="fa fa-phone"></i><a href="tel:9574042225">95740 42225 </a>
                                                 </li>
@@ -490,7 +548,7 @@
                                         <div class="info-list">
                                             <ul class="list-unstyled">
                                                 <li><i
-                                                        class="fas fa-envelope"></i><a>shahibaug@blossominstitutes.com</a>
+                                                        class="fas fa-envelope"></i><a href="mailto:shahibaug@blossominstitutes.com">shahibaug@blossominstitutes.com</a>
                                                 </li>
                                                 <li><i class="fa fa-phone"></i><a>97235 56029 </a></li>
                                                 <li><i class="fa fa-map-marker"></i><a>
@@ -518,7 +576,7 @@
                                         <div class="info-list">
                                             <ul class="list-unstyled">
                                                 <li><i
-                                                        class="fas fa-envelope"></i><a>chandkheda@blossominstitutes.com</a>
+                                                        class="fas fa-envelope"></i><a href="mailto:chandkheda@blossominstitutes.com">chandkheda@blossominstitutes.com</a>
                                                 </li>
                                                 <li><i class="fa fa-phone"></i><a>96248 86029 </a></li>
                                                 <li><i class="fa fa-map-marker"></i><a>
@@ -541,7 +599,7 @@
 
                                         <div class="info-list">
                                             <ul class="list-unstyled">
-                                                <li><i class="fas fa-envelope"></i><a>naroda@blossominstitutes.com </a>
+                                                <li><i class="fas fa-envelope"></i><a href="mailto:naroda@blossominstitutes.com">naroda@blossominstitutes.com </a>
                                                 </li>
                                                 <li><i class="fa fa-phone"></i><a>90331 60781</a></li>
                                                 <li><i class="fa fa-map-marker"></i><a>
@@ -564,7 +622,7 @@
 
                                         <div class="info-list">
                                             <ul class="list-unstyled">
-                                                <li><i class="fas fa-envelope"></i><a>bopal@blossominstitutes.com </a>
+                                                <li><i class="fas fa-envelope"></i><a href="mailto:bopal@blossominstitutes.com">bopal@blossominstitutes.com </a>
                                                 </li>
                                                 <li><i class="fa fa-phone"></i><a>99748 07060 </a></li>
                                                 <li><i class="fa fa-map-marker"></i><a>
@@ -590,7 +648,7 @@
 
                                         <div class="info-list">
                                             <ul class="list-unstyled">
-                                                <li><i class="fas fa-envelope"></i><a>nikol@blossominstitutes.com </a>
+                                                <li><i class="fas fa-envelope"></i><a href="mailto:nikol@blossominstitutes.com">nikol@blossominstitutes.com </a>
                                                 </li>
                                                 <li><i class="fa fa-phone"></i><a>97146 22844 </a></li>
                                                 <li><i class="fa fa-map-marker"></i><a>
@@ -613,7 +671,7 @@
 
                                         <div class="info-list">
                                             <ul class="list-unstyled">
-                                                <li><i class="fas fa-envelope"></i><a>nanpura@blossominstitutes.com </a>
+                                                <li><i class="fas fa-envelope"></i><a href="mailto:nanpura@blossominstitutes.com">nanpura@blossominstitutes.com</a>
                                                 </li>
                                                 <li><i class="fa fa-phone"></i><a>95372 12929 </a></li>
                                                 <li><i class="fa fa-map-marker"></i><a>
@@ -635,7 +693,7 @@
 
                                         <div class="info-list">
                                             <ul class="list-unstyled">
-                                                <li><i class="fas fa-envelope"></i><a>adajan@blossominstitutes.com </a>
+                                                <li><i class="fas fa-envelope"></i><a href="mailto:adajan@blossominstitutes.com">adajan@blossominstitutes.com </a>
                                                 </li>
                                                 <li><i class="fa fa-phone"></i><a>95372 92929 </a></li>
                                                 <li><i class="fa fa-map-marker"></i><a>
@@ -661,7 +719,7 @@
 
                                         <div class="info-list">
                                             <ul class="list-unstyled">
-                                                <li><i class="fas fa-envelope"></i><a>citylight@blossominstitutes.com
+                                                <li><i class="fas fa-envelope"></i><a href="mailto:citylight@blossominstitutes.com">citylight@blossominstitutes.com
                                                     </a></li>
                                                 <li><i class="fa fa-phone"></i><a>95377 12929 </a></li>
                                                 <li><i class="fa fa-map-marker"></i><a>
@@ -690,15 +748,17 @@
                         </ul>
                     </div>
                     <div class="icons">
-                        <i class="fab fa-facebook-square ml-2"></i>
-                        <i class="fab fa-twitter ml-2"></i>
-                        <i class="fab fa-instagram ml-2"></i>
-                        <i class="fab fa-linkedin ml-2"></i>
+                        <a><i class="fab fa-facebook-square ml-2"></i></a>
+                        <a><i class="fab fa-twitter ml-2"></i></a>
+                        <a><i class="fab fa-instagram ml-2"></i></a>
+                        <a><i class="fab fa-linkedin ml-2"></i></a>
+                        <a><i class="fab fa-youtube"></i></a>
+                        
                     </div>
-                    <br>
-                    <div class="pull-right hyper-right ml-5 mr-5 mb-2">Made with <i class="fas fa-heart"></i> by
+                     <span class="text-right ml-5 mr-5 mb-5"><h4><b>Made with <i class="fas fa-heart"></i> by
                         Nisarg
-                        Adalja</div>
+                        Adalja</b></h4></span>
+                   
                 </div>
             </div>
         </div>
@@ -733,7 +793,7 @@
         function showMenu() {
             navLinks.style.right = "0";
         }
-
+        $('.carousel').carousel();
         function hideMenu() {
             navLinks.style.right = "-200px";
         }

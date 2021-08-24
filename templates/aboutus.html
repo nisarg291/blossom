@@ -62,7 +62,7 @@
 
 <body>
     <section class="sub-header">
-        <nav class="">
+        <nav class="navbar navbar-fixed-top">
             <a href="#"><img src="{% static 'images/logo.jpg' %}"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu();"></i>
@@ -115,7 +115,7 @@
                             aria-haspopup="true" aria-expanded="false">Services</a>
                           <div class="dropdown-menu">
                             <a class="dropdown-item" style="color:black !important"
-                                href="{% url 'BlossomCoaching' %}">Blossom Personal Coaching</a>
+                                href="{% url 'BlossomPersonalCoaching' %}">Blossom Personal Coaching</a>
                                    <a class="dropdown-item" style="color:black !important"
                                 href="{% url 'BlossomCoaching' %}">Blossom Coaching</a>
                                 <a class="dropdown-item" style="color:black !important"
@@ -149,8 +149,8 @@
         <div class="row">
             <div class="about-col">
                 <h2>We Are the World's Best Spoken English Institute.<br></h2>
-                <p>We are the First Institute Who Provide Stemp Paper Garenty. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quam, perspiciatis dolorum quia molestiae corrupti eius deserunt sequi suscipit, aperiam voluptate similique laborum illum rerum error laboriosam accusamus tenetur sed.</p>
-                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+                <p style="font-size:20px !important">We are the First Institute Who Provide Stemp Paper Garenty. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quam, perspiciatis dolorum quia molestiae corrupti eius deserunt sequi suscipit, aperiam voluptate similique laborum illum rerum error laboriosam accusamus tenetur sed.</p>
+                <a href="{% url 'home' %}" class="hero-btn red-btn">EXPLORE NOW</a>
             </div>
             <div class="about-col">
                 <img src="static/images/aboutbanner5.jpg">
@@ -158,11 +158,60 @@
             
         </div>
     </section>
-   
-  
-    <footer>
-    <div class="footer-top" style="border: 1px solid #FFF;">
-        <!-- <div class="container">
+
+    <!---------course---------->
+    <section class="course" id="course" style="margin-top:-50px !important">
+        
+        <div class="row">
+            <div class="col-6">
+                <h1 class="mb-3">WHAT IS BLOSSOM</h1>
+                <p id="blossomdetails" class="mt-5" style="text-align:left">Blossom is an internationally recognized fast growing organization in educational industry that shapes the future of many. Blossom provides exclusive career oriented training to professionals, business person, medical representatives, house wives, students and people who are gaga to speak English.<br><br>
+GET UP and GET OUT for creating your own special greatness for the world-Nothing can be more fulfilling and delightful.
+Blossom Education started in 1997 with a lofty idea and a humble presence of helping as many students as we can to improve their English and Personality MORE THINGS... <br><br>
+We have grown and evolved over a period of nearly two decades. Our sheer dedication to serve the best to the students and bringing out the best in them has made us into who We are today.<br><br>
+Today, having Mentored lakhs of students in 22 cities, we stand proud of having carved a niche for ourselves. Students from different walks of life come to us to discover a new improved version of their personality.<br><br>
+It is our sacred duty to see that we do our best to meet their expectations and help them realize their aspirations. We are now coming up with centers all over India to help more and more students realize their true potential.<br> <br>
+We are launching New Courses that will be taught through revolutionary Methods Professional GD, English language, Study Abroad GURU, Etc.Governments, societies, Corporations talk of giving more opportunities to women we already knew the secret...<br><br>
+More women mean the best of everything. No wonder we are happy to be afemale dominated organization. We are proud to be so! Our dedication, commitment, honesty, disciplines, process oriented approach, and work culture and uniqueness have helped usin continuing our success story and become leaders.</p>
+        <button id="guj" class="hero-btn red-btn mb-5 mt-3 gujarati">GUJARATI</button>
+</div>
+<div class="col-6">
+    <h1>Why BLOSSOM</h1>
+    <p id="reason" class="mt-5" style="text-align:left">Our faculties are one of the best in the field. Students not only respect them but even revere them for their unwavering dedication, unmatched teaching skill, untiring help and strong empathy with the students.<br><br>
+No wonder students like to give regards to their teachers even several years after they have successfully completed the course.<br><br>
+At blossom we are known for discipline and dedication. Yes. we ask a lot of our students in these terms but the rewards they get are far sweeter than they could imagine... so who's complaining.<br><br>
+We strongly believe in inspiring and guiding students to 'strengthen their strength & weaken their weakness' thereby making them confident and well trained individuals ready to take up the challenges of the world. Our program increased their employability.<br><br>
+
+So, join us to enrich yourselves and in helping us to make you better than the rest!</p>
+<button id="guj1" class="hero-btn red-btn mb-5 mt-3 gujarati1">GUJARATI</button>
+</div>
+      </div>
+     
+    </section>
+
+   <section class="course" id="course" style="margin-top:-50px !important">
+        
+        <div class="row">
+            <div class="col-12">
+                <h1>MASTER THE FLUENCY IN ENGLISH<br>ADVANCED SPOKEN ENGLISH</h1>
+                <p id="details" class="mt-5" style="text-align:left !important">There is no age limit for learning English here.<br><br>
+1. You have difficulty speaking or understanding English.<br><br> 2. Feel ashamed of not being able to speak English.<br><br>
+3. There is a strong desire to work in a multinational company or call center but English is your problem.<br><br>
+4. You may be a business, a job or a housewife but you look different from people because of English.<br><br>
+5. Your English reading is good but you feel helpless in SPOKEN ENGLISH, MODERN ENGLISH, or shortcut English.<br><br>
+6. You want to take a job abroad but you are not getting success in IELTS or TOEFL.<br><br>
+7. You are not attending a parent meeting at your child's school because of your knowledge of English or low self-confidence.<br><br>
+8. Do you want to do engineering or diploma after standard 12?
+But is it your problem to speak or understand English? <br><br>
+9. I know grammar, but I don't speak English<br><br>
+The only solution to all these problems Is Blossom Institute</p>
+<button id="guj2" class="hero-btn red-btn gujarati2 mt-3 mb-5">GUJARATI</button>
+            </div>
+        </div>
+    </section>
+<footer>
+        <div class="footer-top" style="border: 1px solid #FFF;">
+            <!-- <div class="container">
             <div class="footer-top-wrapper">
                 <div class="footer-top-left"><p class="footer-top-focus">BECOME AN INSTRUCTOR</p>
 
@@ -172,277 +221,363 @@
                 </div>
             </div>
         </div> -->
-    </div>
-    <div class="footer-main">
-        <div class="container-fluid">
-            <div class="footer-main-wrapper">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
-                            <div class="edugate-widget widget">
-                                <div class="title-widget">Maninagar Branch</div>
-                                <div class="content-widget"><p>
-        						  </p>
-
-                                    <div class="info-list">
-                                        <ul class="list-unstyled">
-                                            <li><i class="fas fa-envelope"></i><a>maninagar@blossominstitutes.com</a></li>
-                                            <li><i class="fa fa-phone"></i><a href="tel:9375826472">93758 26472 </a></li>
-                                            <li><i class="fa fa-map-marker"></i><a><p>1<sup>st</sup> Floor, Nr. Farki, Kesarkunj Complex,In Front Of AMC Zonal Office, Krishnabaug Char Rasta,</p>
-                                               			 <p>Maninagar, Ahmedabad.</p></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
-                            <div class="edugate-widget widget">
-                                <div class="title-widget">Bapunagar Branch</div>
-                                <div class="content-widget"><p></p>
-
-                                    <div class="info-list">
-                                        <ul class="list-unstyled">
-                                            <li><i class="fas fa-envelope"></i><a>bapunagar@blossominstitutes.com</a></li>
-                                            <li><i class="fa fa-phone"></i><a href="tel:9924020222">99240 20222 </a></li>
-                                            <li><i class="fa fa-map-marker"></i><a><p>1<sup>st</sup> Floor, Maruti Plaza, Near, Shakti Chavana,</p>
-                                                <p>Bhidbhanjan Road, Bapunagar.</p></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
-                            <div class="edugate-widget widget">
-                                <div class="title-widget">Nehrunagar Branch</div>
-                                <div class="content-widget"><p></p>
-
-                                    <div class="info-list">
-                                        <ul class="list-unstyled">
-                                            <li><i class="fas fa-envelope"></i><a>nehrunagar@blossominstitutes.com</a></li>
-                                            <li><i class="fa fa-phone"></i><a href="tel:9375860397">93758 60397 </a></li>
-                                            <li><i class="fa fa-map-marker"></i><a><p>3<sup>rd</sup> Floor, Shailibhandra Complex, Above Das khaman, infront of Jain Temple,</p>
-
-                                                <p>nehrunagar Cross Roads, Ahmedabad.</p></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
-                            <div class="edugate-widget widget">
-                                <div class="title-widget">Mota Varachha</div>
-                                <div class="content-widget"><p></p>
-
-                                    <div class="info-list">
-                                        <ul class="list-unstyled">
-                                            <li><i class="fas fa-envelope"></i><a>contact@blossominstitutes.com </a></li>
-                                            <li><i class="fa fa-phone"></i><a href="tel:9727172929">9727172929 </a></li>
-                                            <li><i class="fa fa-map-marker"></i><a><p>B/303 Aditya complex Nr. Utran-kapodra Bridge, Above ICICI bank,VIP Circle</p>
-                                                <p>Mota Varachha, Gujarat.</p></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        	     
-
-                        
-                    </div>
-                    </div>
-                                    
+        </div>
+        <div class="footer-main">
+            <div class="container-fluid">
+                <div class="footer-main-wrapper">
                     <div class="row">
-                    <div class="col-12">
-                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
-                            <div class="edugate-widget widget">
-                                <div class="title-widget">Ghatlodiya Branch</div>
-                                <div class="content-widget"><p>
-        						  </p>
+                        <div class="col-12">
+                            <div class="col-md-4 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">Maninagar Branch</div>
+                                    <div class="content-widget">
+                                        <p>
+                                        </p>
 
-                                    <div class="info-list">
-                                        <ul class="list-unstyled">
-                                            <li><i class="fas fa-envelope"></i><a>ghatlodiya@blossominstitutes.com </a></li>
-                                            <li><i class="fa fa-phone"></i><a href="tel:9574042225">95740 42225 </a></li>
-                                            <li><i class="fa fa-map-marker"></i><a><p>1<sup>st</sup> Floor, Shrikunj Shopping Center, Nr. Veer Dairy, Prabhat Chowk,</p>
-                                               			 <p>Ghatlodiya, Ahmedabad.</p></a></li>
-                                        </ul>
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i
+                                                        class="fas fa-envelope"></i><a href="mailto:maninagar@blossominstitutes.com">maninagar@blossominstitutes.com</a>
+                                                </li>
+                                                <li><i class="fa fa-phone"></i><a href="tel:7802043370">93758 26472 </a>
+                                                </li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p>1<sup>st</sup> Floor, Nr. Farki, Kesarkunj Complex,In Front
+                                                            Of AMC Zonal Office, Krishnabaug Char Rasta,</p>
+                                                        <p>Maninagar, Ahmedabad.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
-                            <div class="edugate-widget widget">
-                                <div class="title-widget">Shahibaug Branch</div>
-                                <div class="content-widget"><p></p>
+                            <div class="col-md-3 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">Bapunagar Branch</div>
+                                    <div class="content-widget">
+                                        <p></p>
 
-                                    <div class="info-list">
-                                        <ul class="list-unstyled">
-                                            <li><i class="fas fa-envelope"></i><a>shahibaug@blossominstitutes.com</a></li>
-                                            <li><i class="fa fa-phone"></i><a>97235 56029 </a></li>
-                                            <li><i class="fa fa-map-marker"></i><a><p>3<sup>rd</sup> Floor, Above HDFC Bank, Ashtmangal Complex, Nr. Rajasthan Hospital,</p>
-                                                <p>Shahibaug, Ahmedabad.</p></a></li>
-                                        </ul>
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i
+                                                        class="fas fa-envelope"></i><a href="mailto:bapunagar@blossominstitutes.com">bapunagar@blossominstitutes.com</a>
+                                                </li>
+                                                <li><i class="fa fa-phone"></i><a href="tel:9924020222">99240 20222 </a>
+                                                </li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p>1<sup>st</sup> Floor, Maruti Plaza, Near, Shakti Chavana,</p>
+                                                        <p>Bhidbhanjan Road, Bapunagar.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
-                            <div class="edugate-widget widget">
-                                <div class="title-widget">Chandkheda Branch</div>
-                                <div class="content-widget"><p></p>
 
-                                    <div class="info-list">
-                                        <ul class="list-unstyled">
-                                            <li><i class="fas fa-envelope"></i><a>chandkheda@blossominstitutes.com</a></li>
-                                            <li><i class="fa fa-phone"></i><a>96248 86029 </a></li>
-                                            <li><i class="fa fa-map-marker"></i><a><p>1<sup>st</sup> Floor, Sahjanand Complex, Nr. Sona Cross Road, New C.G. Road,</p>
+                            <div class="col-md-4 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">Nehrunagar Branch</div>
+                                    <div class="content-widget">
+                                        <p></p>
 
-                                                <p>Chandkheda, Ahmedabad.</p></a></li>
-                                        </ul>
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i
+                                                        class="fas fa-envelope"></i><a href="nehrunagar@blossominstitutes.com">nehrunagar@blossominstitutes.com</a>
+                                                </li>
+                                                <li><i class="fa fa-phone"></i><a href="tel:9375860397">93758 60397 </a>
+                                                </li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p>3<sup>rd</sup> Floor, Shailibhandra Complex, Above Das
+                                                            khaman, infront of Jain Temple,</p>
+
+                                                        <p>nehrunagar Cross Roads, Ahmedabad.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
+
+
+
+
                         </div>
-                        	                 
-                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
-                            <div class="edugate-widget widget">
-                                <div class="title-widget">Naroda Branch</div>
-                                <div class="content-widget"><p></p>
+                    </div>
 
-                                    <div class="info-list">
-                                        <ul class="list-unstyled">
-                                            <li><i class="fas fa-envelope"></i><a>naroda@blossominstitutes.com </a></li>
-                                            <li><i class="fa fa-phone"></i><a>90331 60781</a></li>
-                                            <li><i class="fa fa-map-marker"></i><a><p> E 402, 4<sup>th</sup> Floor, Galaxy Arcade, Above Axis Bank, Nr. Galaxy Cinema,</p>
+                    <div class="row">
 
-                                                <p>Naroda, Ahmedabad.</p></a></li>
-                                        </ul>
+                        <div class="col-12">
+                            <div class="col-md-4 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">Mota Varachha</div>
+                                    <div class="content-widget">
+                                        <p></p>
+
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-envelope"></i><a href="mailto:contact@blossominstitutes.com">contact@blossominstitutes.com </a>
+                                                </li>
+                                                <li><i class="fa fa-phone"></i><a href="tel:9727172929">9727172929 </a>
+                                                </li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p>B/303 Aditya complex Nr. Utran-kapodra Bridge, Above ICICI
+                                                            bank,VIP Circle</p>
+                                                        <p>Mota Varachha, Gujarat.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">Ghatlodiya Branch</div>
+                                    <div class="content-widget">
+                                        <p>
+                                        </p>
+
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-envelope"></i><a href="mailto:ghatlodiya@blossominstitutes.com">ghatlodiya@blossominstitutes.com
+                                                    </a></li>
+                                                <li><i class="fa fa-phone"></i><a href="tel:9574042225">95740 42225 </a>
+                                                </li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p>1<sup>st</sup> Floor, Shrikunj Shopping Center, Nr. Veer
+                                                            Dairy, Prabhat Chowk,</p>
+                                                        <p>Ghatlodiya, Ahmedabad.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">Shahibaug Branch</div>
+                                    <div class="content-widget">
+                                        <p></p>
+
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i
+                                                        class="fas fa-envelope"></i><a href="mailto:shahibaug@blossominstitutes.com">shahibaug@blossominstitutes.com</a>
+                                                </li>
+                                                <li><i class="fa fa-phone"></i><a>97235 56029 </a></li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p>3<sup>rd</sup> Floor, Above HDFC Bank, Ashtmangal Complex,
+                                                            Nr. Rajasthan Hospital,</p>
+                                                        <p>Shahibaug, Ahmedabad.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+
+                            <div class="col-md-4 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">Chandkheda Branch</div>
+                                    <div class="content-widget">
+                                        <p></p>
+
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i
+                                                        class="fas fa-envelope"></i><a href="mailto:chandkheda@blossominstitutes.com">chandkheda@blossominstitutes.com</a>
+                                                </li>
+                                                <li><i class="fa fa-phone"></i><a>96248 86029 </a></li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p>1<sup>st</sup> Floor, Sahjanand Complex, Nr. Sona Cross Road,
+                                                            New C.G. Road,</p>
+
+                                                        <p>Chandkheda, Ahmedabad.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">Naroda Branch</div>
+                                    <div class="content-widget">
+                                        <p></p>
+
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-envelope"></i><a href="mailto:naroda@blossominstitutes.com">naroda@blossominstitutes.com </a>
+                                                </li>
+                                                <li><i class="fa fa-phone"></i><a>90331 60781</a></li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p> E 402, 4<sup>th</sup> Floor, Galaxy Arcade, Above Axis Bank,
+                                                            Nr. Galaxy Cinema,</p>
+
+                                                        <p>Naroda, Ahmedabad.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">Bopal Branch</div>
+                                    <div class="content-widget">
+                                        <p>
+                                        </p>
+
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-envelope"></i><a href="mailto:bopal@blossominstitutes.com">bopal@blossominstitutes.com </a>
+                                                </li>
+                                                <li><i class="fa fa-phone"></i><a>99748 07060 </a></li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p>Shop No. 10,11 ,2<sup>nd</sup> Floor, Satyam Complex, B/H
+                                                            Abad Nagar Bus Stop, Bopal Main Road,</p>
+                                                        <p>Bopal, Ahmedabad.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="col-md-4 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">Nikol Branch</div>
+                                    <div class="content-widget">
+                                        <p></p>
+
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-envelope"></i><a href="mailto:nikol@blossominstitutes.com">nikol@blossominstitutes.com </a>
+                                                </li>
+                                                <li><i class="fa fa-phone"></i><a>97146 22844 </a></li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p>303, 3<sup>rd</sup> Floor, Platinum Plaza. In Front of
+                                                            Rajhansh Cinema, Nikol.,</p>
+                                                        <p>Nikol, Ahmedabad.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-3 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">Nanpura Branch (SURAT)</div>
+                                    <div class="content-widget">
+                                        <p></p>
+
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-envelope"></i><a href="mailto:nanpura@blossominstitutes.com">nanpura@blossominstitutes.com</a>
+                                                </li>
+                                                <li><i class="fa fa-phone"></i><a>95372 12929 </a></li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p>2<sup>nd</sup>Floor , Jagdamba Nivas, Kakaji Street, Near
+                                                            Dharmendra Shoes,</p>
+                                                        <p>Nanpura-Timalyawad. Nanpura.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">Adajan Branch (SURAT)</div>
+                                    <div class="content-widget">
+                                        <p>
+                                        </p>
+
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-envelope"></i><a href="mailto:adajan@blossominstitutes.com">adajan@blossominstitutes.com </a>
+                                                </li>
+                                                <li><i class="fa fa-phone"></i><a>95372 92929 </a></li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p>305 Green Plaza, L.P. Savani Circle, Adajan</p>
+                                                        <p>Adajan, Surat.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+
+                            <div class="col-md-4 col-sm-6 col-xs-6 sd380">
+                                <div class="edugate-widget widget">
+                                    <div class="title-widget">City Light Branch (SURAT)</div>
+                                    <div class="content-widget">
+                                        <p></p>
+
+                                        <div class="info-list">
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-envelope"></i><a href="mailto:citylight@blossominstitutes.com">citylight@blossominstitutes.com
+                                                    </a></li>
+                                                <li><i class="fa fa-phone"></i><a>95377 12929 </a></li>
+                                                <li><i class="fa fa-map-marker"></i><a>
+                                                        <p>M-13/14, 3<sup>rd</sup> Floor,Shubhlaxmi Complex,
+                                                            Citylight.
+                                                        </p>
+                                                        <p>Citylight, Surat.</p>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                                    </div>
-                     <div class="row">
-                    <div class="col-12">
-                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
-                            <div class="edugate-widget widget">
-                                <div class="title-widget">Bopal Branch</div>
-                                <div class="content-widget"><p>
-        						  </p>
 
-                                    <div class="info-list">
-                                        <ul class="list-unstyled">
-                                            <li><i class="fas fa-envelope"></i><a>bopal@blossominstitutes.com </a></li>
-                                            <li><i class="fa fa-phone"></i><a>99748 07060 </a></li>
-                                            <li><i class="fa fa-map-marker"></i><a><p>Shop No. 10,11 ,2<sup>nd</sup> Floor, Satyam Complex, B/H Abad Nagar Bus Stop, Bopal Main Road,</p>
-                                               			 <p>Bopal, Ahmedabad.</p></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
-                            <div class="edugate-widget widget">
-                                <div class="title-widget">Nikol Branch</div>
-                                <div class="content-widget"><p></p>
-
-                                    <div class="info-list">
-                                        <ul class="list-unstyled">
-                                            <li><i class="fas fa-envelope"></i><a>nikol@blossominstitutes.com </a></li>
-                                            <li><i class="fa fa-phone"></i><a>97146 22844 </a></li>
-                                            <li><i class="fa fa-map-marker"></i><a><p>303, 3<sup>rd</sup> Floor, Platinum Plaza. In Front of Rajhansh Cinema, Nikol.,</p>
-                                               			 <p>Nikol, Ahmedabad.</p></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-
-                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
-                            <div class="edugate-widget widget">
-                                <div class="title-widget">Nanpura Branch (SURAT)</div>
-                                <div class="content-widget"><p></p>
-
-                                    <div class="info-list">
-                                        <ul class="list-unstyled">
-                                            <li><i class="fas fa-envelope"></i><a>nanpura@blossominstitutes.com </a></li>
-                                            <li><i class="fa fa-phone"></i><a>95372 12929 </a></li>
-                                            <li><i class="fa fa-map-marker"></i><a><p>2<sup>nd</sup>Floor , Jagdamba Nivas, Kakaji Street, Near Dharmendra Shoes,</p>
-                                                <p>Nanpura-Timalyawad. Nanpura.</p></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
-                            <div class="edugate-widget widget">
-                                <div class="title-widget">Adajan Branch (SURAT)</div>
-                                <div class="content-widget"><p>
-        						  </p>
-
-                                    <div class="info-list">
-                                        <ul class="list-unstyled">
-                                            <li><i class="fas fa-envelope"></i><a>adajan@blossominstitutes.com </a></li>
-                                            <li><i class="fa fa-phone"></i><a>95372 92929 </a></li>
-                                            <li><i class="fa fa-map-marker"></i><a><p>305 Green Plaza, L.P. Savani Circle, Adajan</p>
-                                            <p>Adajan, Surat.</p></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                     </div>
-              </div>
-              		<div class="row">
-                    <div class="col-12">
-                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
-                            <div class="edugate-widget widget">
-                                <div class="title-widget">City Light Branch (SURAT)</div>
-                                <div class="content-widget"><p></p>
-
-                                    <div class="info-list">
-                                        <ul class="list-unstyled">
-                                            <li><i class="fas fa-envelope"></i><a>citylight@blossominstitutes.com </a></li>
-                                            <li><i class="fa fa-phone"></i><a>95377 12929 </a></li>
-                                            <li><i class="fa fa-map-marker"></i><a><p>M-13/14, 3<sup>rd</sup> Floor,Shubhlaxmi Complex, Citylight. </p>
-                                                <p>Citylight, Surat.</p></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                        
-                     </div>
-              </div>
-          	
-            </div>
-            <div class="hyperlink">
-                <div class="hyper-left">
-                    <ul class="list-inline col-12">
-                        <li><a href="{% url 'home' %}" class="float-left ml-3 mr-5">HOME</a></li>
-                        <li><a href="{% url 'Courses' %}" class="float-left mr-5">COURSES</a></li>
-                        <li><a href="{% url 'AboutUs' %}" class="float-left ml-5">ABOUT</a></li>
-                        <li><a href="#" class="float-left ml-5 mr-5">Coaching</a></li>
-                        <li><a href="{% url 'Contact' %}" class="float-left mr-5">CONTACT</a></li>
-                    </ul>
-                </div><div class="icons">
-                    <i class="fab fa-facebook-square ml-2"></i>
-                    <i class="fab fa-twitter ml-2"></i>
-                    <i class="fab fa-instagram ml-2"></i>
-                    <i class="fab fa-linkedin ml-2"></i>
                 </div>
-                <br>
-                <div class="pull-right hyper-right ml-5 mr-5 mb-2">Made with <i class="fas fa-heart"></i> by Nisarg Adalja</div>
+                <div class="hyperlink">
+                    <div class="hyper-left">
+                        <ul class="list-inline col-12">
+                            <li><a href="{% url 'home' %}" class="float-left ml-3 mr-5">HOME</a></li>
+                            <li><a href="{% url 'Courses' %}" class="float-left mr-5">COURSES</a></li>
+                            <li><a href="{% url 'AboutUs' %}" class="float-left ml-5">ABOUT</a></li>
+                            <li><a href="#" class="float-left ml-5 mr-5">Coaching</a></li>
+                            <li><a href="{% url 'Contact' %}" class="float-left mr-5">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <div class="icons">
+                        <i class="fab fa-facebook-square ml-2"></i>
+                        <i class="fab fa-twitter ml-2"></i>
+                        <i class="fab fa-instagram ml-2"></i>
+                        <i class="fab fa-linkedin ml-2"></i>
+                    </div>
+                    <br>
+                    <div class="pull-right hyper-right ml-5 mr-5 mb-2">Made with <i class="fas fa-heart"></i> by
+                        Nisarg
+                        Adalja</div>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-    <script src="{% static 'js/homepage.js' %}"></script>
-    <script src="{% static 'js/script.js' %}"></script>
+    </footer>    
+    <!-- <script src="{% static 'js/homepage.js' %}"></script> -->
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
@@ -463,7 +598,7 @@
     <script src="{% static 'js/jquery.fancybox.js' %}"></script>
     <script src="{% static 'js/jquery.fancybox-buttons.js' %}"></script>
     <!-- MAIN JS-->
-    <script src="{% static 'js/main.js' %}"></script>
+    <!-- <script src="{% static 'js/main.js' %}"></script> -->
     <!-- LOADING SCRIPTS FOR PAGE-->
     <script>
         var navLinks = document.getElementById("navLinks");
@@ -475,6 +610,128 @@
         function hideMenu() {
             navLinks.style.right = "-200px";
         }
+        $(".gujarati").click(function(){
+            var guj=document.getElementById("guj");
+            if(guj.innerHTML=="GUJARATI"){
+            console.log("hi");
+            var blossom=document.getElementById("blossomdetails");
+            console.log(blossom);
+            blossom.innerHTML="બ્લોસમ શૈક્ષણિક ઉદ્યોગમાં આંતરરાષ્ટ્રીય સ્તરે માન્યતા પ્રાપ્ત ઝડપથી વિકસતી સંસ્થા છે જે ઘણા લોકોના ભવિષ્યને આકાર આપે છે. બ્લોસમ પ્રોફેશનલ્સ, બિઝનેસ પર્સન, મેડિકલ રિપ્રેઝન્ટેટિવ્સ, હાઉસ વાઈફ્સ, સ્ટુડન્ટ્સ અને અંગ્રેજી બોલવા માટે ગાગા ધરાવતા લોકોને કારકિર્દી લક્ષી તાલીમ પૂરી પાડે છે. <br><br> વિશ્વ માટે તમારી પોતાની વિશેષ મહાનતા બનાવવા માટે આગળ વધો અને બહાર નીકળો-કંઈ વધુ પરિપૂર્ણ અને આનંદદાયક હોઈ શકે નહીં. બ્લોસમ એજ્યુકેશનની શરૂઆત 1997 માં એક ઉંચા વિચાર સાથે અને ઘણા વિદ્યાર્થીઓને તેમની અંગ્રેજી અને વ્યક્તિત્વ સુધારવા માટે મદદ કરી શકે તેવી નમ્ર હાજરીથી કરી શકાય છે ...<br><br> અમે લગભગ બે દાયકાના સમયગાળામાં વિકાસ અને વિકાસ કર્યો છે. વિદ્યાર્થીઓને શ્રેષ્ઠ સેવા આપવા અને તેમાંના શ્રેષ્ઠને બહાર લાવવા માટે અમારા નિષ્ઠાપૂર્વકના સમર્પણથી આપણે આજે કોણ છીએ તે બનાવ્યું છે.<br><br> આજે, 22 શહેરોમાં લાખો વિદ્યાર્થીઓને માર્ગદર્શન આપ્યા પછી, અમે અમારા માટે એક વિશિષ્ટ કોતરણી કરીને ગૌરવ અનુભવીએ છીએ. જીવનના વિવિધ ક્ષેત્રના વિદ્યાર્થીઓ તેમના વ્યક્તિત્વના નવા સુધારેલા સંસ્કરણને શોધવા માટે અમારી પાસે આવે છે.<br><br> તે અમારી પવિત્ર ફરજ છે કે આપણે તેમની અપેક્ષાઓ પૂરી કરવા અને તેમની આકાંક્ષાઓને સાકાર કરવા માટે શ્રેષ્ઠ પ્રયાસો કરીએ છીએ. અમે હવે સમગ્ર ભારતમાં કેન્દ્રો સાથે આવી રહ્યા છીએ જેથી વધુને વધુ વિદ્યાર્થીઓને તેમની સાચી ક્ષમતાનો અહેસાસ થાય.<br><br> અમે નવા અભ્યાસક્રમો શરૂ કરી રહ્યા છીએ જે ક્રાંતિકારી પદ્ધતિઓ દ્વારા શીખવવામાં આવશે વ્યવસાયિક જીડી, અંગ્રેજી ભાષા, વિદેશમાં અભ્યાસ ગુરુ, વગેરે સરકારો, સમાજો, કોર્પોરેશનો મહિલાઓને વધુ તકો આપવાની વાત કરે છે જે આપણે પહેલાથી જ ગુપ્ત જાણતા હતા ... <br><br> વધુ મહિલાઓનો અર્થ શ્રેષ્ઠ છે બધું. કોઈ આશ્ચર્ય નથી કે અમે afemale પ્રભુત્વ ધરાવતી સંસ્થા તરીકે ખુશ છીએ. અમને બેસો પર ગર્વ છે! અમારું સમર્પણ, પ્રતિબદ્ધતા, પ્રામાણિકતા, શિસ્ત, પ્રક્રિયા લક્ષી અભિગમ અને કાર્ય સંસ્કૃતિ અને વિશિષ્ટતાએ અમારી સફળતાની વાર્તા ચાલુ રાખવામાં અને નેતાઓ બનવામાં મદદ કરી છે.";
+           
+            guj.innerHTML="ENGLISH";
+            //guj.classList.remove('gujarati');
+            //guj.classList.add("english");
+            }
+            else{
+                 console.log("english");
+            var blossom=document.getElementById("blossomdetails");
+            console.log(blossom);
+            blossom.innerHTML=`Blossom is an internationally recognized fast growing organization in educational industry that shapes the future of many. Blossom provides exclusive career oriented training to professionals, business person, medical representatives, house wives, students and people who are gaga to speak English.<br><br>
+GET UP and GET OUT for creating your own special greatness for the world-Nothing can be more fulfilling and delightful.
+Blossom Education started in 1997 with a lofty idea and a humble presence of helping as many students as we can to improve their English and Personality MORE THINGS... <br><br>
+We have grown and evolved over a period of nearly two decades. Our sheer dedication to serve the best to the students and bringing out the best in them has made us into who We are today.<br><br>
+Today, having Mentored lakhs of students in 22 cities, we stand proud of having carved a niche for ourselves. Students from different walks of life come to us to discover a new improved version of their personality.<br><br>
+It is our sacred duty to see that we do our best to meet their expectations and help them realize their aspirations. We are now coming up with centers all over India to help more and more students realize their true potential.<br> <br>
+We are launching New Courses that will be taught through revolutionary Methods Professional GD, English language, Study Abroad GURU, Etc.Governments, societies, Corporations talk of giving more opportunities to women we already knew the secret...<br><br>
+More women mean the best of everything. No wonder we are happy to be afemale dominated organization. We are proud to be so! Our dedication, commitment, honesty, disciplines, process oriented approach, and work culture and uniqueness have helped usin continuing our success story and become leaders.`;
+           // blossom.innerHTML='Blossom is an internationally recognized fast growing organization in educational industry that shapes the future of many. Blossom provides exclusive career oriented training to professionals, business person, medical representatives, house wives, students and people who are gaga to speak English.GET UP and GET OUT for creating your own special greatness for the world-Nothing can be more fulfilling and delightful.Blossom Education started in 1997 with a lofty idea and a humble presence of helping as many students as we can to improve their English and PersonalityMORE THINGS... We have grown and evolved over a period of nearly two decades. Our sheer dedication to serve the best to the students and bringing out the best in them has made us into who We are today.Today, having Mentored lakhs of students in 22 cities, we stand proud of having carved a niche for ourselves. Students from different walks of life come to us to discover a new improved version of their personality. It is our sacred duty to see that we do our best to meet their expectations and help them realize their aspirations. We are now coming up with centers all over India to help more and more students realize their true potential. We are launching New Courses that will be taught through revolutionary Methods Professional GD, English language, Study Abroad GURU, Etc.Governments, societies, Corporations talk of giving more opportunities to women we already knew the secret... More women mean the best of everything. No wonder we are happy to be afemale dominated organization. We are proud to beso! Our dedication, commitment, honesty, disciplines, process oriented approach, and work culture and uniqueness have helped usin continuing our success story and become leaders.';
+            var guj=document.getElementById("guj");
+            guj.innerHTML="GUJARATI";
+            //guj.classList.add("gujarati");
+            //guj.classList.remove("english");
+        
+            }
+        });
+       $(".gujarati1").click(function(){
+            var guj=document.getElementById("guj1");
+            if(guj.innerHTML=="GUJARATI"){
+            console.log("hi");
+            var blossom=document.getElementById("reason");
+            console.log(blossom);
+            blossom.innerHTML=`અમારી ફેકલ્ટીઓ ક્ષેત્રમાં શ્રેષ્ઠ છે. વિદ્યાર્થીઓ માત્ર તેમનો આદર કરતા નથી પણ તેમના અવિરત સમર્પણ, અપ્રતિમ શિક્ષણ કૌશલ્ય, અવિરત મદદ અને વિદ્યાર્થીઓ સાથે મજબૂત સહાનુભૂતિ માટે પણ તેમનો આદર કરે છે.<br><br> આશ્ચર્યની વાત નથી કે વિદ્યાર્થીઓ સફળતાપૂર્વક અભ્યાસક્રમ પૂર્ણ કર્યાના ઘણા વર્ષો પછી પણ તેમના શિક્ષકોને આદર આપવાનું પસંદ કરે છે.<br><br>
+
+બ્લોસમમાં આપણે શિસ્ત અને સમર્પણ માટે જાણીતા છીએ. હા. અમે અમારા વિદ્યાર્થીઓને આ શબ્દોમાં ઘણું પૂછીએ છીએ પરંતુ તેઓ જે પારિતોષિકો મેળવે છે તે તેમની કલ્પના કરતા વધારે મીઠા હોય છે ... તો કોણ ફરિયાદ કરે છે.<br><br>
+
+અમે વિદ્યાર્થીઓને 'તેમની તાકાતને મજબૂત કરવા અને તેમની નબળાઈને નબળી પાડવા' માટે પ્રેરણા અને માર્ગદર્શન આપવામાં ભારપૂર્વક માનીએ છીએ જેથી તેઓ વિશ્વના પડકારોનો સામનો કરવા માટે આત્મવિશ્વાસ અને સારી રીતે પ્રશિક્ષિત વ્યક્તિઓ બને છે. અમારા કાર્યક્રમે તેમની રોજગારક્ષમતામાં વધારો કર્યો.<br><br>
+
+તેથી, તમારી જાતને સમૃદ્ધ બનાવવા અને તમને બાકીના કરતા વધુ સારા બનાવવામાં અમારી સહાય કરવામાં અમારી સાથે જોડાઓ!`;
+            guj.innerHTML="ENGLISH";
+            //guj.classList.remove('gujarati');
+            //guj.classList.add("english");
+            }
+            else{
+                 console.log("english");
+            var blossom=document.getElementById("reason");
+            console.log(blossom);
+            blossom.innerHTML=`Our faculties are one of the best in the field. Students not only respect them but even revere them for their unwavering dedication, unmatched teaching skill, untiring help and strong empathy with the students.<br><br>
+No wonder students like to give regards to their teachers even several years after they have successfully completed the course.<br><br>
+At blossom we are known for discipline and dedication. Yes. we ask a lot of our students in these terms but the rewards they get are far sweeter than they could imagine... so who's complaining.<br><br>
+We strongly believe in inspiring and guiding students to 'strengthen their strength & weaken their weakness' thereby making them confident and well trained individuals ready to take up the challenges of the world. Our program increased their employability.<br><br>
+
+So, join us to enrich yourselves and in helping us to make you better than the rest!`;
+            //blossom.innerHTML='Blossom is an internationally recognized fast growing organization in educational industry that shapes the future of many. Blossom provides exclusive career oriented training to professionals, business person, medical representatives, house wives, students and people who are gaga to speak English.GET UP and GET OUT for creating your own special greatness for the world-Nothing can be more fulfilling and delightful.Blossom Education started in 1997 with a lofty idea and a humble presence of helping as many students as we can to improve their English and PersonalityMORE THINGS... We have grown and evolved over a period of nearly two decades. Our sheer dedication to serve the best to the students and bringing out the best in them has made us into who We are today.Today, having Mentored lakhs of students in 22 cities, we stand proud of having carved a niche for ourselves. Students from different walks of life come to us to discover a new improved version of their personality. It is our sacred duty to see that we do our best to meet their expectations and help them realize their aspirations. We are now coming up with centers all over India to help more and more students realize their true potential. We are launching New Courses that will be taught through revolutionary Methods Professional GD, English language, Study Abroad GURU, Etc.Governments, societies, Corporations talk of giving more opportunities to women we already knew the secret... More women mean the best of everything. No wonder we are happy to be afemale dominated organization. We are proud to beso! Our dedication, commitment, honesty, disciplines, process oriented approach, and work culture and uniqueness have helped usin continuing our success story and become leaders.';
+            var guj=document.getElementById("guj1");
+            guj.innerHTML="GUJARATI";
+            //guj.classList.add("gujarati");
+            //guj.classList.remove("english");
+        
+            }
+        });
+       $(".gujarati2").click(function(){
+            var guj=document.getElementById("guj2");
+            if(guj.innerHTML=="GUJARATI"){
+            console.log("hi");
+            var blossom=document.getElementById("details");
+            console.log(blossom);
+            blossom.innerHTML=`અહીંયા અંગ્રેજી શીખવામાં ઉંમરની કોઈ મર્યાદા નથી.<br><br>
+
+૧. તમે અંગ્રેજી બોલતા કે સમજતા મુશ્કેલી અનુભવો છો. ૨. અંગ્રેજીમાં વાત ન કરી શકવા પર શરમ અનુભવો છો.<br><br>
+
+૩. મલ્ટી નેશનલ કંપની કે કોલ સેન્ટરમાં કામ કરવાની તીવ્ર ઈચ્છા છે પણ અંગ્રેજી આપની સમસ્યા છે.<br><br>
+
+૪. તમે ધંધાદારી, નોકરીયાત અથવા ગૃહિણી છો પણ અંગ્રેજીને કારણે લોકોથી અલગ-અલગ દેખાવ છો.<br><br>
+
+૫. તમારું અંગ્રેજી વાંચન સારુ છે પણ SPOKEN ENGLISH, MODERN ENGLISH, અથવા સોર્ટકટ અંગ્રેજીમાં અસહાય અનુભવો છો.<br><br>
+
+૬. વિદેશોમાં નોકરી લેવા ઈચ્છુક છો પણ IELTS અથવા TOEFL ની મુશ્કેલી કે સફળ નથી થઈ રહ્યા.<br><br>
+
+૭. તમે તમારા બાળકોની સ્કૂલમાં પેરેન્ટસ મીટીંગમાં અંગ્રેજીના જાણકાર કે ઓછા આત્મવિશ્વાસના કારણે ભાગ નથી લઈ રહ્યા.<br><br>
+
+૮. તમે ધોરણ ૧૨ પછી એજીનીયરીંગ કે ડીપ્લોમા કરવા ઈચ્છો છો?
+
+પરંતુ શું અંગ્રેજી બોલવું કે સમજવું તમારી સમસ્યા છે? <br><br>
+
+૯. મને ગ્રામર આવડે છે, પણ અંગ્રેજી બોલતા નથી આવડતું<br><br>
+
+આ બધી સમસ્યાનું એકમાત્ર સમાધાન તે બ્લોસમ સંસ્થા છે.`;
+            guj.innerHTML="ENGLISH";
+            //guj.classList.remove('gujarati');
+            //guj.classList.add("english");
+            }
+            else{
+                 console.log("english");
+            var blossom=document.getElementById("details");
+            console.log(blossom);
+            blossom.innerHTML=`There is no age limit for learning English here.<br><br>
+1. You have difficulty speaking or understanding English.<br><br> 
+2. Feel ashamed of not being able to speak English.<br><br>
+3. There is a strong desire to work in a multinational company or call center but English is your problem.<br><br>
+4. You may be a business, a job or a housewife but you look different from people because of English.<br><br>
+5. Your English reading is good but you feel helpless in SPOKEN ENGLISH, MODERN ENGLISH, or shortcut English.<br><br>
+6. You want to take a job abroad but you are not getting success in IELTS or TOEFL.<br><br>
+7. You are not attending a parent meeting at your child's school because of your knowledge of English or low self-confidence.<br><br>
+8. Do you want to do engineering or diploma after standard 12?
+But is it your problem to speak or understand English? <br><br>
+9. I know grammar, but I don't speak English<br><br>
+The only solution to all these problems Is Blossom Institute`;
+            //blossom.innerHTML='Blossom is an internationally recognized fast growing organization in educational industry that shapes the future of many. Blossom provides exclusive career oriented training to professionals, business person, medical representatives, house wives, students and people who are gaga to speak English.GET UP and GET OUT for creating your own special greatness for the world-Nothing can be more fulfilling and delightful.Blossom Education started in 1997 with a lofty idea and a humble presence of helping as many students as we can to improve their English and PersonalityMORE THINGS... We have grown and evolved over a period of nearly two decades. Our sheer dedication to serve the best to the students and bringing out the best in them has made us into who We are today.Today, having Mentored lakhs of students in 22 cities, we stand proud of having carved a niche for ourselves. Students from different walks of life come to us to discover a new improved version of their personality. It is our sacred duty to see that we do our best to meet their expectations and help them realize their aspirations. We are now coming up with centers all over India to help more and more students realize their true potential. We are launching New Courses that will be taught through revolutionary Methods Professional GD, English language, Study Abroad GURU, Etc.Governments, societies, Corporations talk of giving more opportunities to women we already knew the secret... More women mean the best of everything. No wonder we are happy to be afemale dominated organization. We are proud to beso! Our dedication, commitment, honesty, disciplines, process oriented approach, and work culture and uniqueness have helped usin continuing our success story and become leaders.';
+            var guj=document.getElementById("guj2");
+            guj.innerHTML="GUJARATI";
+            //guj.classList.add("gujarati");
+            //guj.classList.remove("english");
+        
+            }
+        });
     </script>
 </body>
 
